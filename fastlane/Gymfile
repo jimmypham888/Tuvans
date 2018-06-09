@@ -1,0 +1,28 @@
+# For more information about this configuration visit
+# https://docs.fastlane.tools/actions/gym/#gymfile
+
+# In general, you can use the options available
+# fastlane gym --help
+
+# Remove the # in front of the line to enable the option
+
+scheme "Venus"
+
+sdk "iphoneos11.3"
+
+clean true
+workspace "Venus.xcworkspace"
+configuration "Release"
+silent true
+output_directory "./build"
+output_name "Venus"
+
+export_options(
+  method: "ad-hoc",
+  provisioningProfiles: {
+    "com.tuvans.venus" => "Venus Ad-hoc"
+  },
+  uploadBitcode: false,
+  uploadSymbols: false,
+  compileBitcode: false
+)

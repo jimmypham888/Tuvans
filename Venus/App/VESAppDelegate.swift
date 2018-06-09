@@ -22,7 +22,16 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
         
+        setupLoginFlow()
+        
         return true
+    }
+    
+    private func setupLoginFlow() {
+        let loginFlow = VESBaseNavigationController(rootViewController: VESLoginVC())
+        var options = UIWindow.TransitionOptions(direction: .fade, style: .easeOut)
+        options.duration = 0.4
+        window!.setRootViewController(loginFlow, options: options)
     }
     
 }
