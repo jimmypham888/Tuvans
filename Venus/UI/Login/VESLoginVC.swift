@@ -9,13 +9,9 @@
 import UIKit
 
 class VESLoginVC: VESBaseViewController {
-
-    @IBOutlet weak var wrapperView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        remakeWrapperView(wrapperView)
     }
 
 }

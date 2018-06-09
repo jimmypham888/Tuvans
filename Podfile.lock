@@ -7,7 +7,7 @@ PODS:
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
-  - ObjectMapper (3.1.0)
+  - ObjectMapper (3.2.0)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxGesture (1.2.1):
@@ -26,7 +26,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireObjectMapper (~> 5.0)
   - Kingfisher (~> 4.0)
-  - ObjectMapper
+  - ObjectMapper (~> 3.2)
   - RxCocoa (~> 4.0)
   - RxGesture
   - RxSwift (~> 4.0)
@@ -55,7 +55,7 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
   RxSwift: e49536837d9901277638493ea537394d4b55f570
@@ -64,6 +64,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
 
-PODFILE CHECKSUM: 288457ad738562da9c5b96572bb8fa2cd95d2b7d
+PODFILE CHECKSUM: dc5733b71ce5cce086fababfc6853fe15b9876b2
 
 COCOAPODS: 1.5.2

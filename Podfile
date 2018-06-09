@@ -13,7 +13,7 @@ target 'Venus' do
   pod 'SnapKit',      '~> 4.0.0'
   pod 'SVProgressHUD'
   pod 'Alamofire',    '~> 4.7'
-  pod 'ObjectMapper'
+  pod 'ObjectMapper', '~> 3.2'
   pod 'XCGLogger'
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'

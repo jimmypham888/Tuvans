@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VESLoginVC" customModule="Venus" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="wrapperView" destination="Cee-5r-oKQ" id="d30-ih-8aS"/>
+                <outlet property="wrraperView" destination="Cee-5r-oKQ" id="cbk-4Y-oUV"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

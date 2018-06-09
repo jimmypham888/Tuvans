@@ -10,6 +10,8 @@
 		4DC57D26068E78D8DA02A48A /* Pods_Venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD958DF01499F6C8C98B672 /* Pods_Venus.framework */; };
 		6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */; };
 		6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */; };
+		6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */; };
+		6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */; };
 		6CE6C17D20CB88A600B58B86 /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17820CB88A600B58B86 /* _StateMachine.swift */; };
 		6CE6C17E20CB88A600B58B86 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17920CB88A600B58B86 /* Cancellable.swift */; };
 		6CE6C17F20CB88A600B58B86 /* _RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */; };
@@ -54,6 +56,8 @@
 		6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7020EF20C6D3DE006AFEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C7020F120C6D3DE006AFEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorListVC.swift; sourceTree = "<group>"; };
+		6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorListVC.xib; sourceTree = "<group>"; };
 		6CE6C17820CB88A600B58B86 /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
 		6CE6C17920CB88A600B58B86 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _RecursiveLock.swift; sourceTree = "<group>"; };
@@ -133,6 +137,22 @@
 			path = Venus;
 			sourceTree = "<group>";
 		};
+		6C8B951D20CB9A4A00F68D03 /* CounselorList */ = {
+			isa = PBXGroup;
+			children = (
+				6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */,
+				6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */,
+			);
+			path = CounselorList;
+			sourceTree = "<group>";
+		};
+		6C8B951E20CB9A5400F68D03 /* CounselorDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CounselorDetail;
+			sourceTree = "<group>";
+		};
 		6CE6C17020CB882900B58B86 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +219,8 @@
 		6CE6C17620CB887900B58B86 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6C8B951E20CB9A5400F68D03 /* CounselorDetail */,
+				6C8B951D20CB9A4A00F68D03 /* CounselorList */,
 				6CE6C1A820CB900500B58B86 /* Login */,
 				6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */,
 			);
@@ -347,6 +369,7 @@
 			files = (
 				6CE6C1A120CB8CBF00B58B86 /* EnvConfiguration.plist in Resources */,
 				6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */,
+				6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */,
 				6CE6C1B720CB946E00B58B86 /* Gymfile in Resources */,
 				6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */,
 				6CE6C1AC20CB902C00B58B86 /* VESLoginVC.xib in Resources */,
@@ -433,6 +456,7 @@
 				6CE6C17D20CB88A600B58B86 /* _StateMachine.swift in Sources */,
 				6CE6C18D20CB8A8C00B58B86 /* UIViewExtensions.swift in Sources */,
 				6CE6C19120CB8ACF00B58B86 /* InitializeExtensions.swift in Sources */,
+				6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */,
 				6CE6C1AB20CB902C00B58B86 /* VESLoginVC.swift in Sources */,
 				6CE6C19C20CB8BF700B58B86 /* Constant.swift in Sources */,
 				6CE6C18920CB8A3600B58B86 /* ReuseableView.swift in Sources */,

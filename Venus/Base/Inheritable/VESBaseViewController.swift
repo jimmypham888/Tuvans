@@ -12,8 +12,16 @@ import SnapKit
 
 class VESBaseViewController: UIViewController {
     
+    @IBOutlet weak var wrraperView: UIView!
+    
     init() {
         super.init(nibName: String.className(type(of: self)), bundle: .main)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        remakeWrapperView(wrraperView)
     }
     
     required init?(coder aDecoder: NSCoder) {
