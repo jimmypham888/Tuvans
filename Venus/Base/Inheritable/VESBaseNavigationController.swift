@@ -1,25 +1,24 @@
 //
-//  ViewController.swift
+//  VESBaseNavigationController.swift
 //  venus
 //
-//  Created by Jimmy Pham on 6/5/18.
+//  Created by Jimmy Pham on 6/9/18.
 //  Copyright © 2018 tuvans. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class VESBaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-
