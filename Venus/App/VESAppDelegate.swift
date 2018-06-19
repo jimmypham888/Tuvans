@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AWSMobileClient
 
 @UIApplicationMain
 class VESAppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,7 +25,20 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         
         setupLoginFlow()
         
-        return true
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, didFinishLaunchingWithOptions:
+            launchOptions)
+    }
+    
+    // Add a AWSMobileClient call in application:open url
+    func application(_ application: UIApplication, open url: URL,
+                     sourceApplication: String?, annotation: Any) -> Bool {
+        
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, open: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
+        
     }
     
     private func setupLoginFlow() {

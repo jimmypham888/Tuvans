@@ -17,5 +17,10 @@ target 'Venus' do
   pod 'XCGLogger'
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'
+  
+  pod 'AWSMobileClient', '~> 2.6.13'
+  pod 'AWSGoogleSignIn', '~> 2.6.13'
+  pod 'AWSAuthUI', '~> 2.6.13'
+  pod 'GoogleSignIn', '~> 4.0'
 
 end

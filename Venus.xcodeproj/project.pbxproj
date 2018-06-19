@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DC57D26068E78D8DA02A48A /* Pods_Venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD958DF01499F6C8C98B672 /* Pods_Venus.framework */; };
 		6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */; };
 		6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */; };
 		6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */; };
 		6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */; };
+		6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264020D97C6E0054C134 /* awsconfiguration.json */; };
+		6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */; };
 		6CE6C17D20CB88A600B58B86 /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17820CB88A600B58B86 /* _StateMachine.swift */; };
 		6CE6C17E20CB88A600B58B86 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17920CB88A600B58B86 /* Cancellable.swift */; };
 		6CE6C17F20CB88A600B58B86 /* _RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */; };
@@ -43,21 +44,19 @@
 		6CE6C1BA20CB946E00B58B86 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6C1B420CB946E00B58B86 /* Fastfile */; };
 		6CE6C1BB20CB946E00B58B86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6C1B520CB946E00B58B86 /* README.md */; };
 		6CE6C1BC20CB946E00B58B86 /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6C1B620CB946E00B58B86 /* report.xml */; };
-		7A543E074084F0CE2343A1B8 /* Pods_venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E33CB2E138ED1F4563034D /* Pods_venus.framework */; };
+		9AC4677C758A8D5495E558EB /* Pods_Venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CB9484EAD3EF8B5663DA708 /* Pods-venus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-venus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-venus/Pods-venus.debug.xcconfig"; sourceTree = "<group>"; };
-		315A6B64492BDD5CD8A0C5AF /* Pods-venus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-venus.release.xcconfig"; path = "Pods/Target Support Files/Pods-venus/Pods-venus.release.xcconfig"; sourceTree = "<group>"; };
-		43E33CB2E138ED1F4563034D /* Pods_venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DD958DF01499F6C8C98B672 /* Pods_Venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		678D047727236C534794452A /* Pods-Venus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.debug.xcconfig"; sourceTree = "<group>"; };
+		45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7020E220C6D3DD006AFEE5 /* Venus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7020EF20C6D3DE006AFEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C7020F120C6D3DE006AFEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorListVC.swift; sourceTree = "<group>"; };
 		6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorListVC.xib; sourceTree = "<group>"; };
+		6CE0264020D97C6E0054C134 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		6CE6C17820CB88A600B58B86 /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
 		6CE6C17920CB88A600B58B86 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _RecursiveLock.swift; sourceTree = "<group>"; };
@@ -89,7 +88,8 @@
 		6CE6C1B420CB946E00B58B86 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		6CE6C1B520CB946E00B58B86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6CE6C1B620CB946E00B58B86 /* report.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
-		8C2A71A96F454B063F410B1A /* Pods-Venus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.release.xcconfig"; sourceTree = "<group>"; };
+		ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.release.xcconfig"; sourceTree = "<group>"; };
+		CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,22 +97,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A543E074084F0CE2343A1B8 /* Pods_venus.framework in Frameworks */,
-				4DC57D26068E78D8DA02A48A /* Pods_Venus.framework in Frameworks */,
+				9AC4677C758A8D5495E558EB /* Pods_Venus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5497BD8E218E7E27B4029B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */,
+				ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6C7020D920C6D3DD006AFEE5 = {
 			isa = PBXGroup;
 			children = (
 				6C7020E420C6D3DD006AFEE5 /* Venus */,
 				6C7020E320C6D3DD006AFEE5 /* Products */,
-				DB3E6CA257ED2D2CF7F6552C /* Pods */,
-				B89B7B23C3F336529691BAD3 /* Frameworks */,
 				6CE6C1B020CB946E00B58B86 /* fastlane */,
+				1F5497BD8E218E7E27B4029B /* Pods */,
+				82D9FA79A94F8A476B9F7F0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +260,8 @@
 			children = (
 				6CE6C1A020CB8CBF00B58B86 /* EnvConfiguration.plist */,
 				6C7020F120C6D3DE006AFEE5 /* Info.plist */,
+				6CE0264020D97C6E0054C134 /* awsconfiguration.json */,
+				6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */,
 				6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
@@ -286,24 +296,12 @@
 			path = fastlane;
 			sourceTree = "<group>";
 		};
-		B89B7B23C3F336529691BAD3 /* Frameworks */ = {
+		82D9FA79A94F8A476B9F7F0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43E33CB2E138ED1F4563034D /* Pods_venus.framework */,
-				5DD958DF01499F6C8C98B672 /* Pods_Venus.framework */,
+				45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DB3E6CA257ED2D2CF7F6552C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0CB9484EAD3EF8B5663DA708 /* Pods-venus.debug.xcconfig */,
-				315A6B64492BDD5CD8A0C5AF /* Pods-venus.release.xcconfig */,
-				678D047727236C534794452A /* Pods-Venus.debug.xcconfig */,
-				8C2A71A96F454B063F410B1A /* Pods-Venus.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,11 +311,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C7020F420C6D3DE006AFEE5 /* Build configuration list for PBXNativeTarget "Venus" */;
 			buildPhases = (
-				45FCBF24BDA5B4E61294852E /* [CP] Check Pods Manifest.lock */,
+				6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */,
 				6C7020DE20C6D3DD006AFEE5 /* Sources */,
 				6C7020DF20C6D3DD006AFEE5 /* Frameworks */,
 				6C7020E020C6D3DD006AFEE5 /* Resources */,
-				85CD3D4F037A5EF3BD20D9C9 /* [CP] Embed Pods Frameworks */,
+				42A402AED0E2CD823366A167 /* [CP] Embed Pods Frameworks */,
+				9DCDDF21669FF812C2617DA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,9 +368,11 @@
 			files = (
 				6CE6C1A120CB8CBF00B58B86 /* EnvConfiguration.plist in Resources */,
 				6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */,
+				6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */,
 				6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */,
 				6CE6C1B720CB946E00B58B86 /* Gymfile in Resources */,
 				6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */,
+				6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */,
 				6CE6C1AC20CB902C00B58B86 /* VESLoginVC.xib in Resources */,
 				6CE6C1BB20CB946E00B58B86 /* README.md in Resources */,
 				6CE6C1BA20CB946E00B58B86 /* Fastfile in Resources */,
@@ -383,7 +384,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45FCBF24BDA5B4E61294852E /* [CP] Check Pods Manifest.lock */ = {
+		42A402AED0E2CD823366A167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSGoogleSignIn/AWSGoogleSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSGoogleSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,44 +458,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85CD3D4F037A5EF3BD20D9C9 /* [CP] Embed Pods Frameworks */ = {
+		9DCDDF21669FF812C2617DA8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -606,7 +641,7 @@
 		};
 		6C7020F520C6D3DE006AFEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 678D047727236C534794452A /* Pods-Venus.debug.xcconfig */;
+			baseConfigurationReference = CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -629,7 +664,7 @@
 		};
 		6C7020F620C6D3DE006AFEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C2A71A96F454B063F410B1A /* Pods-Venus.release.xcconfig */;
+			baseConfigurationReference = ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
