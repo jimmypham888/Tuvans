@@ -24,6 +24,8 @@ class VESBaseViewController: UIViewController {
         remakeWrapperView(wrraperView)
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -43,6 +45,8 @@ class VESBaseViewController: UIViewController {
                 $0.bottom.equalTo(bottomLayoutGuide.snp.top)
             }
         }
+        
+        wrapperView.backgroundColor = UIColor.blue
     }
     
     @objc func dismissKeyboard(){

@@ -10,13 +10,32 @@ import UIKit
 
 class VESCounselorListVC: VESBaseViewController {
 
+    @IBOutlet weak var listCounselor: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configList(listCounselor)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func configList(_ list: UITableView) {
+        list.dataSource = self
+        list.separatorStyle = .none
+        list.rowHeight = 88.0
+        list.registerCell(type: VESCounselorCell.self)
+        list.contentInset = UIEdgeInsets(top: 2, left: 0, bottom: 2, right: 0)
     }
+}
 
+extension VESCounselorListVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(type: VESCounselorCell.self, for: indexPath)
+        cell.updateWith { [weak self] in
+            self?.navigationController?.pushViewController(VESCounselorDetailVC(), animated: true)
+        }
+        return cell
+    }
 }
