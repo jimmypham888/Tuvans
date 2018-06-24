@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */; };
+		6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */; };
+		6C5C7EB420DF8EF7009C075F /* SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */; };
+		6C5C7EB520DF8EF7009C075F /* _RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EB020DF8EF7009C075F /* _RecursiveLock.swift */; };
+		6C5C7EB620DF8EF7009C075F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EB120DF8EF7009C075F /* Cancellable.swift */; };
 		6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */; };
 		6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */; };
 		6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */; };
 		6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */; };
 		6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264020D97C6E0054C134 /* awsconfiguration.json */; };
 		6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */; };
-		6CE6C17D20CB88A600B58B86 /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17820CB88A600B58B86 /* _StateMachine.swift */; };
-		6CE6C17E20CB88A600B58B86 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17920CB88A600B58B86 /* Cancellable.swift */; };
-		6CE6C17F20CB88A600B58B86 /* _RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */; };
-		6CE6C18020CB88A600B58B86 /* SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17B20CB88A600B58B86 /* SwiftTask.swift */; };
-		6CE6C18120CB88A600B58B86 /* _Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17C20CB88A600B58B86 /* _Atomic.swift */; };
 		6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */; };
 		6CE6C18520CB899700B58B86 /* VESBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18420CB899700B58B86 /* VESBaseViewController.swift */; };
 		6CE6C18720CB8A1500B58B86 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18620CB8A1500B58B86 /* NibLoadableView.swift */; };
@@ -49,6 +49,11 @@
 
 /* Begin PBXFileReference section */
 		45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Atomic.swift; sourceTree = "<group>"; };
+		6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
+		6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTask.swift; sourceTree = "<group>"; };
+		6C5C7EB020DF8EF7009C075F /* _RecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _RecursiveLock.swift; sourceTree = "<group>"; };
+		6C5C7EB120DF8EF7009C075F /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		6C7020E220C6D3DD006AFEE5 /* Venus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7020EF20C6D3DE006AFEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,11 +62,6 @@
 		6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorListVC.xib; sourceTree = "<group>"; };
 		6CE0264020D97C6E0054C134 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
-		6CE6C17820CB88A600B58B86 /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
-		6CE6C17920CB88A600B58B86 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
-		6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _RecursiveLock.swift; sourceTree = "<group>"; };
-		6CE6C17B20CB88A600B58B86 /* SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTask.swift; sourceTree = "<group>"; };
-		6CE6C17C20CB88A600B58B86 /* _Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Atomic.swift; sourceTree = "<group>"; };
 		6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESAppDelegate.swift; sourceTree = "<group>"; };
 		6CE6C18420CB899700B58B86 /* VESBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBaseViewController.swift; sourceTree = "<group>"; };
 		6CE6C18620CB8A1500B58B86 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -238,11 +238,11 @@
 		6CE6C17720CB88A600B58B86 /* SwiftTask */ = {
 			isa = PBXGroup;
 			children = (
-				6CE6C17820CB88A600B58B86 /* _StateMachine.swift */,
-				6CE6C17920CB88A600B58B86 /* Cancellable.swift */,
-				6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */,
-				6CE6C17B20CB88A600B58B86 /* SwiftTask.swift */,
-				6CE6C17C20CB88A600B58B86 /* _Atomic.swift */,
+				6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */,
+				6C5C7EB020DF8EF7009C075F /* _RecursiveLock.swift */,
+				6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */,
+				6C5C7EB120DF8EF7009C075F /* Cancellable.swift */,
+				6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */,
 			);
 			path = SwiftTask;
 			sourceTree = "<group>";
@@ -316,7 +316,6 @@
 				6C7020DF20C6D3DD006AFEE5 /* Frameworks */,
 				6C7020E020C6D3DD006AFEE5 /* Resources */,
 				42A402AED0E2CD823366A167 /* [CP] Embed Pods Frameworks */,
-				9DCDDF21669FF812C2617DA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,16 +390,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSGoogleSignIn/AWSGoogleSignIn.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -414,16 +405,8 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSGoogleSignIn.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -458,24 +441,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DCDDF21669FF812C2617DA8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -484,30 +449,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE6C1AF20CB917000B58B86 /* UIWindowTransitions.swift in Sources */,
-				6CE6C18020CB88A600B58B86 /* SwiftTask.swift in Sources */,
 				6CE6C1A320CB8D0A00B58B86 /* VESBaseTableViewCell.swift in Sources */,
 				6CE6C19320CB8AE600B58B86 /* ProcessInfoExtensions.swift in Sources */,
 				6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */,
-				6CE6C17D20CB88A600B58B86 /* _StateMachine.swift in Sources */,
 				6CE6C18D20CB8A8C00B58B86 /* UIViewExtensions.swift in Sources */,
 				6CE6C19120CB8ACF00B58B86 /* InitializeExtensions.swift in Sources */,
 				6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */,
+				6C5C7EB520DF8EF7009C075F /* _RecursiveLock.swift in Sources */,
 				6CE6C1AB20CB902C00B58B86 /* VESLoginVC.swift in Sources */,
 				6CE6C19C20CB8BF700B58B86 /* Constant.swift in Sources */,
 				6CE6C18920CB8A3600B58B86 /* ReuseableView.swift in Sources */,
 				6CE6C1A720CB8D4B00B58B86 /* VESBaseNavigationController.swift in Sources */,
-				6CE6C18120CB88A600B58B86 /* _Atomic.swift in Sources */,
 				6CE6C18F20CB8AA900B58B86 /* UITableViewExtensions.swift in Sources */,
-				6CE6C17F20CB88A600B58B86 /* _RecursiveLock.swift in Sources */,
 				6CE6C18720CB8A1500B58B86 /* NibLoadableView.swift in Sources */,
 				6CE6C19720CB8B4100B58B86 /* StringExtensions.swift in Sources */,
-				6CE6C17E20CB88A600B58B86 /* Cancellable.swift in Sources */,
+				6C5C7EB620DF8EF7009C075F /* Cancellable.swift in Sources */,
 				6CE6C19520CB8B0000B58B86 /* UICollectionViewExtensions.swift in Sources */,
 				6CE6C1A520CB8D2C00B58B86 /* VESBaseCollectionViewCell.swift in Sources */,
 				6CE6C18520CB899700B58B86 /* VESBaseViewController.swift in Sources */,
+				6C5C7EB420DF8EF7009C075F /* SwiftTask.swift in Sources */,
+				6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */,
 				6CE6C18B20CB8A6000B58B86 /* UIImageViewExtensions.swift in Sources */,
 				6CE6C19920CB8B6F00B58B86 /* AbstractAPI.swift in Sources */,
 				6CE6C19E20CB8C3100B58B86 /* NetworkingConstant.swift in Sources */,
+				6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
