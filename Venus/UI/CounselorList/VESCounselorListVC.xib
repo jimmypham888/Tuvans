@@ -28,8 +28,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlY-K7-CCz">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                             <subviews>
-                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="G7e-Fs-r6h">
+                                <searchBar contentMode="redraw" placeholder="Tìm kiếm theo tên" translatesAutoresizingMaskIntoConstraints="NO" id="G7e-Fs-r6h">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                             </subviews>

@@ -8,7 +8,7 @@
 
 scheme "Venus"
 
-sdk "iphoneos11.3"
+sdk "iphoneos11.4"
 
 clean true
 workspace "Venus.xcworkspace"
