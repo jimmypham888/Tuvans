@@ -20,9 +20,9 @@ class VESCounselorListVC: VESBaseViewController {
     private func configList(_ list: UITableView) {
         list.dataSource = self
         list.separatorStyle = .none
-        list.rowHeight = 88.0
+        list.rowHeight = 160
         list.registerCell(type: VESCounselorCell.self)
-        list.contentInset = UIEdgeInsets(top: 2, left: 0, bottom: 2, right: 0)
+        list.contentInset = UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0)
     }
 }
 

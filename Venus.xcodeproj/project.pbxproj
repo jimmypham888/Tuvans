@@ -21,6 +21,10 @@
 		6C5C7ECB20DFC2C4009C075F /* VESCounselorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C7EC920DFC2C4009C075F /* VESCounselorCell.xib */; };
 		6C5C7ECF20DFC894009C075F /* VESCounselorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7ECD20DFC894009C075F /* VESCounselorDetailVC.swift */; };
 		6C5C7ED020DFC894009C075F /* VESCounselorDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C7ECE20DFC894009C075F /* VESCounselorDetailVC.xib */; };
+		6C69BB7D20DFFAF40039DA48 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7920DFFAF30039DA48 /* OpenSans-Semibold.ttf */; };
+		6C69BB7E20DFFAF40039DA48 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7A20DFFAF30039DA48 /* OpenSans-Light.ttf */; };
+		6C69BB7F20DFFAF40039DA48 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7B20DFFAF30039DA48 /* OpenSans-Bold.ttf */; };
+		6C69BB8020DFFAF40039DA48 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7C20DFFAF30039DA48 /* OpenSans-Regular.ttf */; };
 		6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */; };
 		6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */; };
 		6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */; };
@@ -72,6 +76,10 @@
 		6C5C7EC920DFC2C4009C075F /* VESCounselorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorCell.xib; sourceTree = "<group>"; };
 		6C5C7ECD20DFC894009C075F /* VESCounselorDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorDetailVC.swift; sourceTree = "<group>"; };
 		6C5C7ECE20DFC894009C075F /* VESCounselorDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorDetailVC.xib; sourceTree = "<group>"; };
+		6C69BB7920DFFAF30039DA48 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		6C69BB7A20DFFAF30039DA48 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		6C69BB7B20DFFAF30039DA48 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		6C69BB7C20DFFAF30039DA48 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		6C7020E220C6D3DD006AFEE5 /* Venus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7020EF20C6D3DE006AFEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,6 +158,7 @@
 		6C5C7EBF20DFB62E009C075F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C69BB7820DFFAF30039DA48 /* Fonts */,
 				6C5C7EC020DFB637009C075F /* Assets */,
 			);
 			path = Resources;
@@ -186,6 +195,17 @@
 				6C5C7ECE20DFC894009C075F /* VESCounselorDetailVC.xib */,
 			);
 			path = CounselorDetail;
+			sourceTree = "<group>";
+		};
+		6C69BB7820DFFAF30039DA48 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6C69BB7920DFFAF30039DA48 /* OpenSans-Semibold.ttf */,
+				6C69BB7A20DFFAF30039DA48 /* OpenSans-Light.ttf */,
+				6C69BB7B20DFFAF30039DA48 /* OpenSans-Bold.ttf */,
+				6C69BB7C20DFFAF30039DA48 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		6C7020D920C6D3DD006AFEE5 = {
@@ -445,14 +465,18 @@
 				6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */,
 				6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */,
 				6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */,
+				6C69BB7E20DFFAF40039DA48 /* OpenSans-Light.ttf in Resources */,
+				6C69BB7D20DFFAF40039DA48 /* OpenSans-Semibold.ttf in Resources */,
 				6CE6C1B720CB946E00B58B86 /* Gymfile in Resources */,
 				6C5C7EBE20DFB598009C075F /* SwiftGen.sh in Resources */,
 				6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */,
 				6C5C7ECB20DFC2C4009C075F /* VESCounselorCell.xib in Resources */,
+				6C69BB8020DFFAF40039DA48 /* OpenSans-Regular.ttf in Resources */,
 				6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */,
 				6CE6C1AC20CB902C00B58B86 /* VESLoginVC.xib in Resources */,
 				6C5C7ED020DFC894009C075F /* VESCounselorDetailVC.xib in Resources */,
 				6CE6C1BB20CB946E00B58B86 /* README.md in Resources */,
+				6C69BB7F20DFFAF40039DA48 /* OpenSans-Bold.ttf in Resources */,
 				6CE6C1BA20CB946E00B58B86 /* Fastfile in Resources */,
 				6CE6C1B920CB946E00B58B86 /* Appfile in Resources */,
 				6CE6C1BC20CB946E00B58B86 /* report.xml in Resources */,
