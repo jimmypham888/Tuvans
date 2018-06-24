@@ -13,5 +13,4 @@ class VESLoginVC: VESBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }

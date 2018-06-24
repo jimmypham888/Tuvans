@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DC57D26068E78D8DA02A48A /* Pods_Venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD958DF01499F6C8C98B672 /* Pods_Venus.framework */; };
+		6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */; };
+		6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */; };
+		6C5C7EB420DF8EF7009C075F /* SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */; };
+		6C5C7EB520DF8EF7009C075F /* _RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EB020DF8EF7009C075F /* _RecursiveLock.swift */; };
+		6C5C7EB620DF8EF7009C075F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EB120DF8EF7009C075F /* Cancellable.swift */; };
+		6C5C7EB820DF97D3009C075F /* VESBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EB720DF97D3009C075F /* VESBaseTabBarController.swift */; };
+		6C5C7EBB20DFAEEC009C075F /* VESTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EBA20DFAEEC009C075F /* VESTabBarVC.swift */; };
+		6C5C7EBE20DFB598009C075F /* SwiftGen.sh in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C7EBD20DFB598009C075F /* SwiftGen.sh */; };
+		6C5C7EC320DFB755009C075F /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EC220DFB755009C075F /* UIImage+Assets.swift */; };
+		6C5C7EC620DFB93E009C075F /* FlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EC520DFB93E009C075F /* FlowManager.swift */; };
+		6C5C7ECA20DFC2C4009C075F /* VESCounselorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EC820DFC2C4009C075F /* VESCounselorCell.swift */; };
+		6C5C7ECB20DFC2C4009C075F /* VESCounselorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C7EC920DFC2C4009C075F /* VESCounselorCell.xib */; };
+		6C5C7ECF20DFC894009C075F /* VESCounselorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7ECD20DFC894009C075F /* VESCounselorDetailVC.swift */; };
+		6C5C7ED020DFC894009C075F /* VESCounselorDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5C7ECE20DFC894009C075F /* VESCounselorDetailVC.xib */; };
+		6C69BB7D20DFFAF40039DA48 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7920DFFAF30039DA48 /* OpenSans-Semibold.ttf */; };
+		6C69BB7E20DFFAF40039DA48 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7A20DFFAF30039DA48 /* OpenSans-Light.ttf */; };
+		6C69BB7F20DFFAF40039DA48 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7B20DFFAF30039DA48 /* OpenSans-Bold.ttf */; };
+		6C69BB8020DFFAF40039DA48 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C69BB7C20DFFAF30039DA48 /* OpenSans-Regular.ttf */; };
 		6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */; };
 		6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */; };
 		6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */; };
 		6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */; };
-		6CE6C17D20CB88A600B58B86 /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17820CB88A600B58B86 /* _StateMachine.swift */; };
-		6CE6C17E20CB88A600B58B86 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17920CB88A600B58B86 /* Cancellable.swift */; };
-		6CE6C17F20CB88A600B58B86 /* _RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */; };
-		6CE6C18020CB88A600B58B86 /* SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17B20CB88A600B58B86 /* SwiftTask.swift */; };
-		6CE6C18120CB88A600B58B86 /* _Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C17C20CB88A600B58B86 /* _Atomic.swift */; };
+		6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264020D97C6E0054C134 /* awsconfiguration.json */; };
+		6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */; };
 		6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */; };
 		6CE6C18520CB899700B58B86 /* VESBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18420CB899700B58B86 /* VESBaseViewController.swift */; };
 		6CE6C18720CB8A1500B58B86 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18620CB8A1500B58B86 /* NibLoadableView.swift */; };
@@ -43,26 +57,37 @@
 		6CE6C1BA20CB946E00B58B86 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6C1B420CB946E00B58B86 /* Fastfile */; };
 		6CE6C1BB20CB946E00B58B86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6C1B520CB946E00B58B86 /* README.md */; };
 		6CE6C1BC20CB946E00B58B86 /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6C1B620CB946E00B58B86 /* report.xml */; };
-		7A543E074084F0CE2343A1B8 /* Pods_venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E33CB2E138ED1F4563034D /* Pods_venus.framework */; };
+		9AC4677C758A8D5495E558EB /* Pods_Venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CB9484EAD3EF8B5663DA708 /* Pods-venus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-venus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-venus/Pods-venus.debug.xcconfig"; sourceTree = "<group>"; };
-		315A6B64492BDD5CD8A0C5AF /* Pods-venus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-venus.release.xcconfig"; path = "Pods/Target Support Files/Pods-venus/Pods-venus.release.xcconfig"; sourceTree = "<group>"; };
-		43E33CB2E138ED1F4563034D /* Pods_venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DD958DF01499F6C8C98B672 /* Pods_Venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		678D047727236C534794452A /* Pods-Venus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.debug.xcconfig"; sourceTree = "<group>"; };
+		45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Atomic.swift; sourceTree = "<group>"; };
+		6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
+		6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTask.swift; sourceTree = "<group>"; };
+		6C5C7EB020DF8EF7009C075F /* _RecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _RecursiveLock.swift; sourceTree = "<group>"; };
+		6C5C7EB120DF8EF7009C075F /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		6C5C7EB720DF97D3009C075F /* VESBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBaseTabBarController.swift; sourceTree = "<group>"; };
+		6C5C7EBA20DFAEEC009C075F /* VESTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESTabBarVC.swift; sourceTree = "<group>"; };
+		6C5C7EBD20DFB598009C075F /* SwiftGen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SwiftGen.sh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.sh; };
+		6C5C7EC220DFB755009C075F /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
+		6C5C7EC520DFB93E009C075F /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
+		6C5C7EC820DFC2C4009C075F /* VESCounselorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorCell.swift; sourceTree = "<group>"; };
+		6C5C7EC920DFC2C4009C075F /* VESCounselorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorCell.xib; sourceTree = "<group>"; };
+		6C5C7ECD20DFC894009C075F /* VESCounselorDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorDetailVC.swift; sourceTree = "<group>"; };
+		6C5C7ECE20DFC894009C075F /* VESCounselorDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorDetailVC.xib; sourceTree = "<group>"; };
+		6C69BB7920DFFAF30039DA48 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		6C69BB7A20DFFAF30039DA48 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		6C69BB7B20DFFAF30039DA48 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		6C69BB7C20DFFAF30039DA48 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		6C7020E220C6D3DD006AFEE5 /* Venus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7020EF20C6D3DE006AFEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C7020F120C6D3DE006AFEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorListVC.swift; sourceTree = "<group>"; };
 		6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorListVC.xib; sourceTree = "<group>"; };
-		6CE6C17820CB88A600B58B86 /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
-		6CE6C17920CB88A600B58B86 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
-		6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _RecursiveLock.swift; sourceTree = "<group>"; };
-		6CE6C17B20CB88A600B58B86 /* SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTask.swift; sourceTree = "<group>"; };
-		6CE6C17C20CB88A600B58B86 /* _Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Atomic.swift; sourceTree = "<group>"; };
+		6CE0264020D97C6E0054C134 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESAppDelegate.swift; sourceTree = "<group>"; };
 		6CE6C18420CB899700B58B86 /* VESBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBaseViewController.swift; sourceTree = "<group>"; };
 		6CE6C18620CB8A1500B58B86 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -89,7 +114,8 @@
 		6CE6C1B420CB946E00B58B86 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		6CE6C1B520CB946E00B58B86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6CE6C1B620CB946E00B58B86 /* report.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
-		8C2A71A96F454B063F410B1A /* Pods-Venus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.release.xcconfig"; sourceTree = "<group>"; };
+		ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.release.xcconfig"; sourceTree = "<group>"; };
+		CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,22 +123,99 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A543E074084F0CE2343A1B8 /* Pods_venus.framework in Frameworks */,
-				4DC57D26068E78D8DA02A48A /* Pods_Venus.framework in Frameworks */,
+				9AC4677C758A8D5495E558EB /* Pods_Venus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5497BD8E218E7E27B4029B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */,
+				ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C5C7EB920DFAE8F009C075F /* StructureUI */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C7EBA20DFAEEC009C075F /* VESTabBarVC.swift */,
+			);
+			path = StructureUI;
+			sourceTree = "<group>";
+		};
+		6C5C7EBC20DFB57B009C075F /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C7EBD20DFB598009C075F /* SwiftGen.sh */,
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
+		6C5C7EBF20DFB62E009C075F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C69BB7820DFFAF30039DA48 /* Fonts */,
+				6C5C7EC020DFB637009C075F /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C5C7EC020DFB637009C075F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C7EC220DFB755009C075F /* UIImage+Assets.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6C5C7EC420DFB91D009C075F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		6C5C7EC720DFC2A3009C075F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C7EC820DFC2C4009C075F /* VESCounselorCell.swift */,
+				6C5C7EC920DFC2C4009C075F /* VESCounselorCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6C5C7ECC20DFC879009C075F /* CounselorDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C7ECD20DFC894009C075F /* VESCounselorDetailVC.swift */,
+				6C5C7ECE20DFC894009C075F /* VESCounselorDetailVC.xib */,
+			);
+			path = CounselorDetail;
+			sourceTree = "<group>";
+		};
+		6C69BB7820DFFAF30039DA48 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6C69BB7920DFFAF30039DA48 /* OpenSans-Semibold.ttf */,
+				6C69BB7A20DFFAF30039DA48 /* OpenSans-Light.ttf */,
+				6C69BB7B20DFFAF30039DA48 /* OpenSans-Bold.ttf */,
+				6C69BB7C20DFFAF30039DA48 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		6C7020D920C6D3DD006AFEE5 = {
 			isa = PBXGroup;
 			children = (
 				6C7020E420C6D3DD006AFEE5 /* Venus */,
 				6C7020E320C6D3DD006AFEE5 /* Products */,
-				DB3E6CA257ED2D2CF7F6552C /* Pods */,
-				B89B7B23C3F336529691BAD3 /* Frameworks */,
 				6CE6C1B020CB946E00B58B86 /* fastlane */,
+				1F5497BD8E218E7E27B4029B /* Pods */,
+				82D9FA79A94F8A476B9F7F0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,17 +243,12 @@
 		6C8B951D20CB9A4A00F68D03 /* CounselorList */ = {
 			isa = PBXGroup;
 			children = (
+				6C5C7ECC20DFC879009C075F /* CounselorDetail */,
+				6C5C7EC720DFC2A3009C075F /* Cell */,
 				6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */,
 				6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */,
 			);
 			path = CounselorList;
-			sourceTree = "<group>";
-		};
-		6C8B951E20CB9A5400F68D03 /* CounselorDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CounselorDetail;
 			sourceTree = "<group>";
 		};
 		6CE6C17020CB882900B58B86 /* Networking */ = {
@@ -165,6 +263,7 @@
 		6CE6C17120CB882F00B58B86 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				6C5C7EBC20DFB57B009C075F /* Script */,
 				6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */,
 			);
 			path = App;
@@ -203,6 +302,7 @@
 				6CE6C1A220CB8D0A00B58B86 /* VESBaseTableViewCell.swift */,
 				6CE6C1A420CB8D2C00B58B86 /* VESBaseCollectionViewCell.swift */,
 				6CE6C1A620CB8D4B00B58B86 /* VESBaseNavigationController.swift */,
+				6C5C7EB720DF97D3009C075F /* VESBaseTabBarController.swift */,
 			);
 			path = Inheritable;
 			sourceTree = "<group>";
@@ -219,8 +319,10 @@
 		6CE6C17620CB887900B58B86 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6C8B951E20CB9A5400F68D03 /* CounselorDetail */,
+				6C5C7EC520DFB93E009C075F /* FlowManager.swift */,
+				6C5C7EB920DFAE8F009C075F /* StructureUI */,
 				6C8B951D20CB9A4A00F68D03 /* CounselorList */,
+				6C5C7EC420DFB91D009C075F /* Setting */,
 				6CE6C1A820CB900500B58B86 /* Login */,
 				6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */,
 			);
@@ -230,11 +332,11 @@
 		6CE6C17720CB88A600B58B86 /* SwiftTask */ = {
 			isa = PBXGroup;
 			children = (
-				6CE6C17820CB88A600B58B86 /* _StateMachine.swift */,
-				6CE6C17920CB88A600B58B86 /* Cancellable.swift */,
-				6CE6C17A20CB88A600B58B86 /* _RecursiveLock.swift */,
-				6CE6C17B20CB88A600B58B86 /* SwiftTask.swift */,
-				6CE6C17C20CB88A600B58B86 /* _Atomic.swift */,
+				6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */,
+				6C5C7EB020DF8EF7009C075F /* _RecursiveLock.swift */,
+				6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */,
+				6C5C7EB120DF8EF7009C075F /* Cancellable.swift */,
+				6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */,
 			);
 			path = SwiftTask;
 			sourceTree = "<group>";
@@ -250,8 +352,11 @@
 		6CE6C19F20CB8C9600B58B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6C5C7EBF20DFB62E009C075F /* Resources */,
 				6CE6C1A020CB8CBF00B58B86 /* EnvConfiguration.plist */,
 				6C7020F120C6D3DE006AFEE5 /* Info.plist */,
+				6CE0264020D97C6E0054C134 /* awsconfiguration.json */,
+				6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */,
 				6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
@@ -286,24 +391,12 @@
 			path = fastlane;
 			sourceTree = "<group>";
 		};
-		B89B7B23C3F336529691BAD3 /* Frameworks */ = {
+		82D9FA79A94F8A476B9F7F0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43E33CB2E138ED1F4563034D /* Pods_venus.framework */,
-				5DD958DF01499F6C8C98B672 /* Pods_Venus.framework */,
+				45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DB3E6CA257ED2D2CF7F6552C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0CB9484EAD3EF8B5663DA708 /* Pods-venus.debug.xcconfig */,
-				315A6B64492BDD5CD8A0C5AF /* Pods-venus.release.xcconfig */,
-				678D047727236C534794452A /* Pods-Venus.debug.xcconfig */,
-				8C2A71A96F454B063F410B1A /* Pods-Venus.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,11 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C7020F420C6D3DE006AFEE5 /* Build configuration list for PBXNativeTarget "Venus" */;
 			buildPhases = (
-				45FCBF24BDA5B4E61294852E /* [CP] Check Pods Manifest.lock */,
+				6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */,
+				6C5C7EC120DFB69D009C075F /* ShellScript */,
 				6C7020DE20C6D3DD006AFEE5 /* Sources */,
 				6C7020DF20C6D3DD006AFEE5 /* Frameworks */,
 				6C7020E020C6D3DD006AFEE5 /* Resources */,
-				85CD3D4F037A5EF3BD20D9C9 /* [CP] Embed Pods Frameworks */,
+				42A402AED0E2CD823366A167 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,11 +463,20 @@
 			files = (
 				6CE6C1A120CB8CBF00B58B86 /* EnvConfiguration.plist in Resources */,
 				6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */,
+				6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */,
 				6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */,
+				6C69BB7E20DFFAF40039DA48 /* OpenSans-Light.ttf in Resources */,
+				6C69BB7D20DFFAF40039DA48 /* OpenSans-Semibold.ttf in Resources */,
 				6CE6C1B720CB946E00B58B86 /* Gymfile in Resources */,
+				6C5C7EBE20DFB598009C075F /* SwiftGen.sh in Resources */,
 				6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */,
+				6C5C7ECB20DFC2C4009C075F /* VESCounselorCell.xib in Resources */,
+				6C69BB8020DFFAF40039DA48 /* OpenSans-Regular.ttf in Resources */,
+				6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */,
 				6CE6C1AC20CB902C00B58B86 /* VESLoginVC.xib in Resources */,
+				6C5C7ED020DFC894009C075F /* VESCounselorDetailVC.xib in Resources */,
 				6CE6C1BB20CB946E00B58B86 /* README.md in Resources */,
+				6C69BB7F20DFFAF40039DA48 /* OpenSans-Bold.ttf in Resources */,
 				6CE6C1BA20CB946E00B58B86 /* Fastfile in Resources */,
 				6CE6C1B920CB946E00B58B86 /* Appfile in Resources */,
 				6CE6C1BC20CB946E00B58B86 /* report.xml in Resources */,
@@ -383,25 +486,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45FCBF24BDA5B4E61294852E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Venus-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85CD3D4F037A5EF3BD20D9C9 /* [CP] Embed Pods Frameworks */ = {
+		42A402AED0E2CD823366A167 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,6 +526,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6C5C7EC120DFB69D009C075F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $TARGET_NAME/App/Script/SwiftGen.sh;
+		};
+		6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Venus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -449,30 +565,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE6C1AF20CB917000B58B86 /* UIWindowTransitions.swift in Sources */,
-				6CE6C18020CB88A600B58B86 /* SwiftTask.swift in Sources */,
 				6CE6C1A320CB8D0A00B58B86 /* VESBaseTableViewCell.swift in Sources */,
 				6CE6C19320CB8AE600B58B86 /* ProcessInfoExtensions.swift in Sources */,
 				6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */,
-				6CE6C17D20CB88A600B58B86 /* _StateMachine.swift in Sources */,
 				6CE6C18D20CB8A8C00B58B86 /* UIViewExtensions.swift in Sources */,
 				6CE6C19120CB8ACF00B58B86 /* InitializeExtensions.swift in Sources */,
 				6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */,
+				6C5C7ECA20DFC2C4009C075F /* VESCounselorCell.swift in Sources */,
+				6C5C7EB520DF8EF7009C075F /* _RecursiveLock.swift in Sources */,
 				6CE6C1AB20CB902C00B58B86 /* VESLoginVC.swift in Sources */,
+				6C5C7EBB20DFAEEC009C075F /* VESTabBarVC.swift in Sources */,
 				6CE6C19C20CB8BF700B58B86 /* Constant.swift in Sources */,
 				6CE6C18920CB8A3600B58B86 /* ReuseableView.swift in Sources */,
 				6CE6C1A720CB8D4B00B58B86 /* VESBaseNavigationController.swift in Sources */,
-				6CE6C18120CB88A600B58B86 /* _Atomic.swift in Sources */,
 				6CE6C18F20CB8AA900B58B86 /* UITableViewExtensions.swift in Sources */,
-				6CE6C17F20CB88A600B58B86 /* _RecursiveLock.swift in Sources */,
 				6CE6C18720CB8A1500B58B86 /* NibLoadableView.swift in Sources */,
 				6CE6C19720CB8B4100B58B86 /* StringExtensions.swift in Sources */,
-				6CE6C17E20CB88A600B58B86 /* Cancellable.swift in Sources */,
+				6C5C7EB820DF97D3009C075F /* VESBaseTabBarController.swift in Sources */,
+				6C5C7EC620DFB93E009C075F /* FlowManager.swift in Sources */,
+				6C5C7EB620DF8EF7009C075F /* Cancellable.swift in Sources */,
 				6CE6C19520CB8B0000B58B86 /* UICollectionViewExtensions.swift in Sources */,
 				6CE6C1A520CB8D2C00B58B86 /* VESBaseCollectionViewCell.swift in Sources */,
 				6CE6C18520CB899700B58B86 /* VESBaseViewController.swift in Sources */,
+				6C5C7EB420DF8EF7009C075F /* SwiftTask.swift in Sources */,
+				6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */,
 				6CE6C18B20CB8A6000B58B86 /* UIImageViewExtensions.swift in Sources */,
 				6CE6C19920CB8B6F00B58B86 /* AbstractAPI.swift in Sources */,
 				6CE6C19E20CB8C3100B58B86 /* NetworkingConstant.swift in Sources */,
+				6C5C7EC320DFB755009C075F /* UIImage+Assets.swift in Sources */,
+				6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */,
+				6C5C7ECF20DFC894009C075F /* VESCounselorDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +728,7 @@
 		};
 		6C7020F520C6D3DE006AFEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 678D047727236C534794452A /* Pods-Venus.debug.xcconfig */;
+			baseConfigurationReference = CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -629,7 +751,7 @@
 		};
 		6C7020F620C6D3DE006AFEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C2A71A96F454B063F410B1A /* Pods-Venus.release.xcconfig */;
+			baseConfigurationReference = ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";

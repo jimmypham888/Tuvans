@@ -22,16 +22,25 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
         
-        setupLoginFlow()
+        setupTabBar()
         
         return true
     }
     
     private func setupLoginFlow() {
         let loginFlow = VESBaseNavigationController(rootViewController: VESLoginVC())
+        changeRoot(loginFlow)
+    }
+    
+    private func setupTabBar() {
+        let tabBar = VESTabBarVC()
+        changeRoot(tabBar)
+    }
+    
+    private func changeRoot(_ vc: UIViewController)  {
         var options = UIWindow.TransitionOptions(direction: .fade, style: .easeOut)
         options.duration = 0.4
-        window!.setRootViewController(loginFlow, options: options)
+        window!.setRootViewController(vc, options: options)
     }
     
 }

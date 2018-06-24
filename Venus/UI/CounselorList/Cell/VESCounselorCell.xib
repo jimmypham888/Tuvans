@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="207" id="KGk-i7-Jjw" customClass="VESCounselorCell" customModule="Venus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="642" height="207"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="642" height="206.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lx-mK-irf">
+                        <rect key="frame" x="0.0" y="0.0" width="642" height="160"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3EL-EE-GMr">
+                                <rect key="frame" x="8" y="4" width="626" height="152"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmW-hc-5EC">
+                                        <rect key="frame" x="0.0" y="0.0" width="626" height="72"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ngogiatu" translatesAutoresizingMaskIntoConstraints="NO" id="XUC-We-298">
+                                                <rect key="frame" x="8" y="8" width="56" height="56"/>
+                                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XUC-We-298" secondAttribute="height" multiplier="1:1" id="XYx-mL-8N7"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLL-8y-cZk">
+                                                <rect key="frame" x="72" y="13.5" width="546" height="46.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngô Gia Tự" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLm-1c-OgO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="546" height="26"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiên Sơn, Bắc Ninh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeD-hS-6Ky">
+                                                        <rect key="frame" x="0.0" y="26" width="546" height="21"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="JeD-hS-6Ky" firstAttribute="leading" secondItem="vLL-8y-cZk" secondAttribute="leading" id="1KM-OZ-afi"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="48" id="3mD-IU-wqe"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JeD-hS-6Ky" secondAttribute="bottom" id="JIT-sO-n1s"/>
+                                                    <constraint firstItem="JeD-hS-6Ky" firstAttribute="top" secondItem="WLm-1c-OgO" secondAttribute="bottom" id="MCh-pU-epf"/>
+                                                    <constraint firstItem="WLm-1c-OgO" firstAttribute="top" secondItem="vLL-8y-cZk" secondAttribute="top" id="Rmz-ci-Kcy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JeD-hS-6Ky" secondAttribute="trailing" id="YE0-dF-pAi"/>
+                                                    <constraint firstItem="WLm-1c-OgO" firstAttribute="leading" secondItem="vLL-8y-cZk" secondAttribute="leading" id="oHs-Qd-GR5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WLm-1c-OgO" secondAttribute="trailing" id="zdo-sG-DEI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XUC-We-298" firstAttribute="leading" secondItem="DmW-hc-5EC" secondAttribute="leading" constant="8" id="BZF-70-tvV"/>
+                                            <constraint firstItem="XUC-We-298" firstAttribute="top" secondItem="DmW-hc-5EC" secondAttribute="top" constant="8" id="GvG-Kq-Yft"/>
+                                            <constraint firstAttribute="trailing" secondItem="vLL-8y-cZk" secondAttribute="trailing" constant="8" id="Mlg-1u-qXb"/>
+                                            <constraint firstAttribute="height" constant="72" id="f44-UI-hTa"/>
+                                            <constraint firstItem="XUC-We-298" firstAttribute="centerY" secondItem="DmW-hc-5EC" secondAttribute="centerY" id="fn0-Lm-W6I"/>
+                                            <constraint firstItem="vLL-8y-cZk" firstAttribute="leading" secondItem="XUC-We-298" secondAttribute="trailing" constant="8" id="mxL-n0-qVo"/>
+                                            <constraint firstItem="vLL-8y-cZk" firstAttribute="centerY" secondItem="DmW-hc-5EC" secondAttribute="centerY" id="yAi-8t-XG3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1F-3u-9bk">
+                                        <rect key="frame" x="8" y="72" width="610" height="1"/>
+                                        <color key="backgroundColor" white="0.86078559027777779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="6VP-qU-Mtv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0P-Fu-APr">
+                                        <rect key="frame" x="8" y="81" width="610" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8f-Sy-tRl">
+                                                <rect key="frame" x="0.0" y="0.0" width="610" height="63"/>
+                                                <mutableString key="text">Ngô Gia Tự (3 tháng 12 năm 1908 – 1934) là một đảng viên đảng Cộng sản Việt Nam. Ông sinh tại làng Tam Sơn, huyện Tiên Sơn, tỉnh Bắc Ninh (nay là xã Tam Sơn, thị xã Từ Sơn, tỉnh Bắc Ninh). Năm 1927, ông tham gia lớp huấn luyện chính trị do Nguyễn Ái Quốc tổ chức tại Quảng Châu, Trung Quốc, được Kỳ bộ Bắc kỳ Việt Nam Thanh niên Cách mạng Đồng chí Hội chỉ định vào Tỉnh bộ Bắc Ninh để gây dựng cơ sở ở địa phương. Năm 1928, Ngô Gia Tự được đưa về hoạt động tại Kỳ bộ Bắc kỳ. Ngày 1 tháng 5 năm 1929, Đại hội toàn quốc của Việt Nam Thanh niên cách mạng đồng chí hội họp ở Hương Cảng</mutableString>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="U8f-Sy-tRl" secondAttribute="trailing" id="DlF-PW-fx6"/>
+                                            <constraint firstAttribute="bottom" secondItem="U8f-Sy-tRl" secondAttribute="bottom" id="NaN-ao-5FG"/>
+                                            <constraint firstItem="U8f-Sy-tRl" firstAttribute="leading" secondItem="P0P-Fu-APr" secondAttribute="leading" id="Zqg-vC-PhB"/>
+                                            <constraint firstItem="U8f-Sy-tRl" firstAttribute="top" secondItem="P0P-Fu-APr" secondAttribute="top" id="pVm-gA-ove"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DmW-hc-5EC" firstAttribute="leading" secondItem="3EL-EE-GMr" secondAttribute="leading" id="942-VO-8Ar"/>
+                                    <constraint firstAttribute="trailing" secondItem="DmW-hc-5EC" secondAttribute="trailing" id="CJa-2M-R3y"/>
+                                    <constraint firstItem="W1F-3u-9bk" firstAttribute="top" secondItem="DmW-hc-5EC" secondAttribute="bottom" id="HCO-Mb-XnQ"/>
+                                    <constraint firstItem="DmW-hc-5EC" firstAttribute="top" secondItem="3EL-EE-GMr" secondAttribute="top" id="Pn2-Wv-WYS"/>
+                                    <constraint firstItem="W1F-3u-9bk" firstAttribute="trailing" secondItem="vLL-8y-cZk" secondAttribute="trailing" id="Ya4-Jt-lm0"/>
+                                    <constraint firstAttribute="trailing" secondItem="P0P-Fu-APr" secondAttribute="trailing" constant="8" id="aGs-9v-xSO"/>
+                                    <constraint firstItem="P0P-Fu-APr" firstAttribute="top" secondItem="W1F-3u-9bk" secondAttribute="bottom" constant="8" id="cat-lG-UAN"/>
+                                    <constraint firstItem="W1F-3u-9bk" firstAttribute="leading" secondItem="XUC-We-298" secondAttribute="leading" id="cbz-EQ-auk"/>
+                                    <constraint firstItem="P0P-Fu-APr" firstAttribute="leading" secondItem="3EL-EE-GMr" secondAttribute="leading" constant="8" id="vre-1T-3xq"/>
+                                    <constraint firstAttribute="bottom" secondItem="P0P-Fu-APr" secondAttribute="bottom" constant="8" id="yoO-bU-6P6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.86502381828096175" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="DZN-cN-WPm"/>
+                            <constraint firstItem="3EL-EE-GMr" firstAttribute="top" secondItem="2Lx-mK-irf" secondAttribute="top" constant="4" id="Su8-uO-Ks0"/>
+                            <constraint firstItem="3EL-EE-GMr" firstAttribute="centerY" secondItem="2Lx-mK-irf" secondAttribute="centerY" id="X9v-hs-TSa"/>
+                            <constraint firstItem="3EL-EE-GMr" firstAttribute="centerX" secondItem="2Lx-mK-irf" secondAttribute="centerX" id="il9-Sj-JhW"/>
+                            <constraint firstItem="3EL-EE-GMr" firstAttribute="leading" secondItem="2Lx-mK-irf" secondAttribute="leading" constant="8" id="mS3-1T-LPZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2Lx-mK-irf" secondAttribute="trailing" id="cve-vc-esa"/>
+                    <constraint firstItem="2Lx-mK-irf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cwm-KQ-kfC"/>
+                    <constraint firstItem="2Lx-mK-irf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lG9-dP-BH2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="22" y="39.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ngogiatu" width="298" height="400"/>
+    </resources>
+</document>
