@@ -21,4 +21,10 @@ extension UIImageView {
         kf.indicatorType = .activity
         kf.setImage(with: URL(string: urlString), placeholder: placeholder, options: options)
     }
+    
+    func setImage(asset: ImageAsset, withColor color: UIColor) {
+        let image = UIImage(asset: asset).withRenderingMode(.alwaysTemplate)
+        tintColor = color
+        self.image = image
+    }
 }

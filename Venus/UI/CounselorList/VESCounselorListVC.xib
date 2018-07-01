@@ -6,13 +6,21 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VESCounselorListVC" customModule="Venus" customModuleProvider="target">
             <connections>
                 <outlet property="listCounselor" destination="nKL-rX-paw" id="iWf-UZ-IzV"/>
+                <outlet property="searchField" destination="aow-Wp-Fvi" id="G9A-8O-fE6"/>
+                <outlet property="searchImageView" destination="J6B-JN-vQ2" id="b1K-z5-lCo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="wrraperView" destination="vCY-1g-0Ek" id="CIM-ae-JUc"/>
             </connections>
@@ -26,41 +34,52 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlY-K7-CCz">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                             <subviews>
-                                <searchBar contentMode="redraw" placeholder="Tìm kiếm theo tên" translatesAutoresizingMaskIntoConstraints="NO" id="G7e-Fs-r6h">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="J6B-JN-vQ2">
+                                    <rect key="frame" x="12" y="12" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="J6B-JN-vQ2" secondAttribute="height" multiplier="1:1" id="5xD-zF-pS0"/>
+                                        <constraint firstAttribute="width" constant="24" id="x1D-TH-nGA"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tìm kiếm cố vấn" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aow-Wp-Fvi">
+                                    <rect key="frame" x="48" y="13" width="315" height="22"/>
+                                    <color key="tintColor" red="0.023529411760000001" green="0.2901960784" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
+                                </textField>
                             </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="G7e-Fs-r6h" secondAttribute="trailing" id="2g3-fv-JgY"/>
-                                <constraint firstItem="G7e-Fs-r6h" firstAttribute="leading" secondItem="qlY-K7-CCz" secondAttribute="leading" id="3kb-ya-HG9"/>
-                                <constraint firstAttribute="bottom" secondItem="G7e-Fs-r6h" secondAttribute="bottom" id="8ul-zr-mmZ"/>
-                                <constraint firstAttribute="height" priority="100" constant="64" id="Oq7-eI-dtE"/>
-                                <constraint firstItem="G7e-Fs-r6h" firstAttribute="top" secondItem="qlY-K7-CCz" secondAttribute="top" id="ngu-fY-bKI"/>
+                                <constraint firstItem="aow-Wp-Fvi" firstAttribute="leading" secondItem="J6B-JN-vQ2" secondAttribute="trailing" constant="12" id="4CU-ff-OvO"/>
+                                <constraint firstAttribute="height" priority="100" constant="48" id="Oq7-eI-dtE"/>
+                                <constraint firstAttribute="trailing" secondItem="aow-Wp-Fvi" secondAttribute="trailing" constant="12" id="cbY-XN-gQh"/>
+                                <constraint firstItem="J6B-JN-vQ2" firstAttribute="leading" secondItem="qlY-K7-CCz" secondAttribute="leading" constant="12" id="gxm-By-jjH"/>
+                                <constraint firstItem="aow-Wp-Fvi" firstAttribute="centerY" secondItem="qlY-K7-CCz" secondAttribute="centerY" id="hnD-CM-zte"/>
+                                <constraint firstItem="J6B-JN-vQ2" firstAttribute="centerY" secondItem="qlY-K7-CCz" secondAttribute="centerY" id="zzI-Nm-1FB"/>
                             </constraints>
                         </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nKL-rX-paw">
-                            <rect key="frame" x="0.0" y="56" width="375" height="591"/>
-                            <color key="backgroundColor" red="0.8901960784313725" green="0.94901960784313721" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nKL-rX-paw">
+                            <rect key="frame" x="8" y="48" width="359" height="599"/>
+                            <color key="backgroundColor" red="0.8784313725490196" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         </tableView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.94901960780000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="nKL-rX-paw" firstAttribute="top" secondItem="qlY-K7-CCz" secondAttribute="bottom" id="7Z7-lh-2i2"/>
                         <constraint firstItem="qlY-K7-CCz" firstAttribute="leading" secondItem="vCY-1g-0Ek" secondAttribute="leading" id="Ae0-i9-dlU"/>
-                        <constraint firstAttribute="trailing" secondItem="nKL-rX-paw" secondAttribute="trailing" id="Mqf-Qf-Coy"/>
-                        <constraint firstItem="nKL-rX-paw" firstAttribute="leading" secondItem="vCY-1g-0Ek" secondAttribute="leading" id="Oxr-I6-9Qu"/>
+                        <constraint firstItem="nKL-rX-paw" firstAttribute="leading" secondItem="vCY-1g-0Ek" secondAttribute="leading" constant="8" id="Oxr-I6-9Qu"/>
                         <constraint firstItem="qlY-K7-CCz" firstAttribute="top" secondItem="vCY-1g-0Ek" secondAttribute="top" id="UBr-vv-p3r"/>
                         <constraint firstAttribute="trailing" secondItem="qlY-K7-CCz" secondAttribute="trailing" id="YNb-bi-o6V"/>
+                        <constraint firstItem="nKL-rX-paw" firstAttribute="centerX" secondItem="vCY-1g-0Ek" secondAttribute="centerX" id="esw-Uw-Fhy"/>
                         <constraint firstAttribute="bottom" secondItem="nKL-rX-paw" secondAttribute="bottom" id="mRQ-ua-ILM"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.023529411764705882" green="0.29019607843137252" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vCY-1g-0Ek" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0p4-oz-Dzh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vCY-1g-0Ek" secondAttribute="bottom" id="5QE-EY-mNz"/>
@@ -68,6 +87,10 @@
                 <constraint firstItem="vCY-1g-0Ek" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="r7g-zC-7En"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="search" width="48" height="48"/>
+    </resources>
 </document>

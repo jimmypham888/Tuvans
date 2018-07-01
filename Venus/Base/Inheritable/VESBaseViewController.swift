@@ -45,8 +45,6 @@ class VESBaseViewController: UIViewController {
                 $0.bottom.equalTo(bottomLayoutGuide.snp.top)
             }
         }
-        
-        wrapperView.backgroundColor = UIColor.blue
     }
     
     @objc func dismissKeyboard(){
