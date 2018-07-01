@@ -292,6 +292,7 @@
                     <constraint firstAttribute="trailing" secondItem="2Lx-mK-irf" secondAttribute="trailing" id="cve-vc-esa"/>
                     <constraint firstItem="2Lx-mK-irf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cwm-KQ-kfC"/>
                     <constraint firstItem="2Lx-mK-irf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lG9-dP-BH2"/>
+                    <constraint firstAttribute="bottom" secondItem="2Lx-mK-irf" secondAttribute="bottom" priority="250" id="lbz-1y-QVB"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
