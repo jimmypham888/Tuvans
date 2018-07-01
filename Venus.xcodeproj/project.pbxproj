@@ -29,6 +29,10 @@
 		6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */; };
 		6C8B952120CB9A7600F68D03 /* VESCounselorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */; };
 		6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */; };
+		6C968C3820E8F82C003C08B8 /* PlistUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C968C3720E8F82C003C08B8 /* PlistUtility.swift */; };
+		6C968C3A20E8F873003C08B8 /* FakeCounselor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C968C3920E8F873003C08B8 /* FakeCounselor.plist */; };
+		6CAD5DCB20E8F3CC00B56ADD /* VESCounselorCellv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD5DC920E8F3CC00B56ADD /* VESCounselorCellv2.swift */; };
+		6CAD5DCC20E8F3CC00B56ADD /* VESCounselorCellv2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5DCA20E8F3CC00B56ADD /* VESCounselorCellv2.xib */; };
 		6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264020D97C6E0054C134 /* awsconfiguration.json */; };
 		6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */; };
 		6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */; };
@@ -86,6 +90,10 @@
 		6C7020F120C6D3DE006AFEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C8B951F20CB9A7600F68D03 /* VESCounselorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorListVC.swift; sourceTree = "<group>"; };
 		6C8B952020CB9A7600F68D03 /* VESCounselorListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorListVC.xib; sourceTree = "<group>"; };
+		6C968C3720E8F82C003C08B8 /* PlistUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistUtility.swift; sourceTree = "<group>"; };
+		6C968C3920E8F873003C08B8 /* FakeCounselor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FakeCounselor.plist; sourceTree = "<group>"; };
+		6CAD5DC920E8F3CC00B56ADD /* VESCounselorCellv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorCellv2.swift; sourceTree = "<group>"; };
+		6CAD5DCA20E8F3CC00B56ADD /* VESCounselorCellv2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorCellv2.xib; sourceTree = "<group>"; };
 		6CE0264020D97C6E0054C134 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESAppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +192,8 @@
 			children = (
 				6C5C7EC820DFC2C4009C075F /* VESCounselorCell.swift */,
 				6C5C7EC920DFC2C4009C075F /* VESCounselorCell.xib */,
+				6CAD5DC920E8F3CC00B56ADD /* VESCounselorCellv2.swift */,
+				6CAD5DCA20E8F3CC00B56ADD /* VESCounselorCellv2.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -251,6 +261,22 @@
 			path = CounselorList;
 			sourceTree = "<group>";
 		};
+		6C968C3520E8F7BA003C08B8 /* FakeData */ = {
+			isa = PBXGroup;
+			children = (
+				6C968C3920E8F873003C08B8 /* FakeCounselor.plist */,
+			);
+			path = FakeData;
+			sourceTree = "<group>";
+		};
+		6C968C3620E8F818003C08B8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6C968C3720E8F82C003C08B8 /* PlistUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		6CE6C17020CB882900B58B86 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +298,7 @@
 		6CE6C17220CB883E00B58B86 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6C968C3620E8F818003C08B8 /* Utility */,
 				6CE6C18620CB8A1500B58B86 /* NibLoadableView.swift */,
 				6CE6C18820CB8A3600B58B86 /* ReuseableView.swift */,
 				6CE6C18A20CB8A6000B58B86 /* UIImageViewExtensions.swift */,
@@ -352,6 +379,7 @@
 		6CE6C19F20CB8C9600B58B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6C968C3520E8F7BA003C08B8 /* FakeData */,
 				6C5C7EBF20DFB62E009C075F /* Resources */,
 				6CE6C1A020CB8CBF00B58B86 /* EnvConfiguration.plist */,
 				6C7020F120C6D3DE006AFEE5 /* Info.plist */,
@@ -479,7 +507,9 @@
 				6C69BB7F20DFFAF40039DA48 /* OpenSans-Bold.ttf in Resources */,
 				6CE6C1BA20CB946E00B58B86 /* Fastfile in Resources */,
 				6CE6C1B920CB946E00B58B86 /* Appfile in Resources */,
+				6C968C3A20E8F873003C08B8 /* FakeCounselor.plist in Resources */,
 				6CE6C1BC20CB946E00B58B86 /* report.xml in Resources */,
+				6CAD5DCC20E8F3CC00B56ADD /* VESCounselorCellv2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +597,7 @@
 				6CE6C1AF20CB917000B58B86 /* UIWindowTransitions.swift in Sources */,
 				6CE6C1A320CB8D0A00B58B86 /* VESBaseTableViewCell.swift in Sources */,
 				6CE6C19320CB8AE600B58B86 /* ProcessInfoExtensions.swift in Sources */,
+				6CAD5DCB20E8F3CC00B56ADD /* VESCounselorCellv2.swift in Sources */,
 				6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */,
 				6CE6C18D20CB8A8C00B58B86 /* UIViewExtensions.swift in Sources */,
 				6CE6C19120CB8ACF00B58B86 /* InitializeExtensions.swift in Sources */,
@@ -588,6 +619,7 @@
 				6CE6C1A520CB8D2C00B58B86 /* VESBaseCollectionViewCell.swift in Sources */,
 				6CE6C18520CB899700B58B86 /* VESBaseViewController.swift in Sources */,
 				6C5C7EB420DF8EF7009C075F /* SwiftTask.swift in Sources */,
+				6C968C3820E8F82C003C08B8 /* PlistUtility.swift in Sources */,
 				6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */,
 				6CE6C18B20CB8A6000B58B86 /* UIImageViewExtensions.swift in Sources */,
 				6CE6C19920CB8B6F00B58B86 /* AbstractAPI.swift in Sources */,

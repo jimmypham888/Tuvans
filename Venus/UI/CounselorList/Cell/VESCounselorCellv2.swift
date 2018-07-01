@@ -1,0 +1,32 @@
+//
+//  VESCounselorCellv2.swift
+//  Venus
+//
+//  Created by Jimmy Pham on 7/1/18.
+//  Copyright © 2018 tuvans. All rights reserved.
+//
+
+import UIKit
+
+class VESCounselorCellv2: VESBaseTableViewCell {
+
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var descLbl: UILabel!
+    @IBOutlet var infoLblCollection: [UILabel]!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+    func updateWith(dict: Dictionary<String, Any>) {
+        nameLbl.text = dict["name"] as! String
+        descLbl.text = dict["desc"] as! String
+    }
+    
+}

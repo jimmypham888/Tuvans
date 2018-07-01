@@ -18,11 +18,16 @@ class VESCounselorListVC: VESBaseViewController {
     }
     @IBOutlet weak var searchField: UITextField!
     
+    private var fakeDataArrayDict: [Dictionary<String, Any>] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configList(listCounselor)
         configSearchField(searchField)
         setEndEditing()
+        fakeDataArrayDict = PlistUtility.ReadPlistArray("FakeCounselor")
+        listCounselor.reloadData()
+        print(fakeDataArrayDict)
     }
     
     private func configSearchField(_ field: UITextField) {
@@ -33,8 +38,8 @@ class VESCounselorListVC: VESBaseViewController {
         list.dataSource = self
         list.delegate = self
         list.separatorStyle = .none
-        list.rowHeight = 249
-        list.registerCell(type: VESCounselorCell.self)
+        list.rowHeight = 213.0
+        list.registerCell(type: VESCounselorCellv2.self)
     }
 }
 
@@ -60,7 +65,7 @@ extension VESCounselorListVC: UITableViewDelegate {
 extension VESCounselorListVC: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return fakeDataArrayDict.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,10 +73,8 @@ extension VESCounselorListVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(type: VESCounselorCell.self, for: indexPath)
-        cell.updateWith { [weak self] in
-            self?.navigationController?.pushViewController(VESCounselorDetailVC(), animated: true)
-        }
+        let cell = tableView.dequeueReusableCell(type: VESCounselorCellv2.self, for: indexPath)
+        cell.updateWith(dict: fakeDataArrayDict[indexPath.section])
         return cell
     }
 }
