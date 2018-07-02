@@ -15,10 +15,11 @@ class VESBaseNavigationController: UINavigationController {
         
         isNavigationBarHidden = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    internal func makeRootView() {
+        var options = UIWindow.TransitionOptions(direction: .fade, style: .easeOut)
+        options.duration = 0.4
+        VESAppDelegate.shared.window!.setRootViewController(self)
     }
     
 }

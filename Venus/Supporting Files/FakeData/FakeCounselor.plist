@@ -9,6 +9,8 @@
 		<string>St. John&apos;s University, 2011-2015</string>
 		<key>image</key>
 		<string>ducnhu</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/ACoAAAtcaAcBp_EdUDD-dQ9PeZIFHeni8vDBmM0/</string>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Risk Management and Insurance</string>
@@ -23,6 +25,8 @@
 		<string>Drexel University, 2011-2016</string>
 		<key>image</key>
 		<string>trungdo</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/trungdo1993/</string>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Computer Engineering</string>
@@ -37,6 +41,8 @@
 		<string>Drexel University, 2011-2016</string>
 		<key>image</key>
 		<string>ducnguyen</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/ducnguyen93/</string>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Business Administration</string>
@@ -51,6 +57,8 @@
 		<string>Drexel University, 2010-2014</string>
 		<key>image</key>
 		<string>phuongtran</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/phuong-tran-85bb5463/</string>
 		<key>intro</key>
 		<array>
 			<string>M.S &amp; B.S. in Chemical Engineering</string>
