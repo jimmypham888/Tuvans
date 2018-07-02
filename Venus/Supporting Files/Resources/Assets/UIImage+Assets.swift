@@ -44,6 +44,7 @@ struct ColorAsset {
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 enum Asset {
+  static let linkedin = ImageAsset(name: "Linkedin")
   enum People {
     static let ducnguyen = ImageAsset(name: "ducnguyen")
     static let ducnhu = ImageAsset(name: "ducnhu")
@@ -51,19 +52,24 @@ enum Asset {
     static let phuongtran = ImageAsset(name: "phuongtran")
     static let trungdo = ImageAsset(name: "trungdo")
   }
+  static let addBlack = ImageAsset(name: "add_black")
   static let back = ImageAsset(name: "back")
+  static let close = ImageAsset(name: "close")
   static let search = ImageAsset(name: "search")
 
   // swiftlint:disable trailing_comma
   static let allColors: [ColorAsset] = [
   ]
   static let allImages: [ImageAsset] = [
+    linkedin,
     People.ducnguyen,
     People.ducnhu,
     People.ngogiatu,
     People.phuongtran,
     People.trungdo,
+    addBlack,
     back,
+    close,
     search,
   ]
   // swiftlint:enable trailing_comma
