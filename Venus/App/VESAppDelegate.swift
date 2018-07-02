@@ -22,7 +22,7 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
         
-        setupTabBar()
+        setupWithoutTabBar()
         
         return true
     }
@@ -30,6 +30,12 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
     private func setupLoginFlow() {
         let loginFlow = VESBaseNavigationController(rootViewController: VESLoginVC())
         changeRoot(loginFlow)
+    }
+    
+    private func setupWithoutTabBar() {
+        let counselorListVC = VESCounselorListVC()
+        let navController = VESBaseNavigationController(rootViewController: counselorListVC)
+        navController.makeRootView()
     }
     
     private func setupTabBar() {

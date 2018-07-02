@@ -47,6 +47,12 @@ class VESBaseViewController: UIViewController {
         }
     }
     
+    internal func makeRootView() {
+        var options = UIWindow.TransitionOptions(direction: .fade, style: .easeOut)
+        options.duration = 0.4
+        VESAppDelegate.shared.window!.setRootViewController(self)
+    }
+    
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
