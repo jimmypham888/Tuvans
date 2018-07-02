@@ -15,18 +15,25 @@ class VESCounselorCellv2: VESBaseTableViewCell {
     @IBOutlet weak var counselorImage: UIImageView!
     @IBOutlet weak var infoStackView: UIStackView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBAction func didTapCell(_ sender: UIButton) {
+        action?()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var originalBtn: UIButton!
+    
+    private var action: (() -> ())?
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        action = nil
     }
     
-    func updateWith(dict: Dictionary<String, Any>) {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        originalBtn.superview?.bringSubview(toFront: originalBtn)
+    }
+    
+    func updateWith(dict: Dictionary<String, Any>, action: (() -> ())?) {
+        self.action = action
         nameLbl.text = dict["name"] as? String
         descLbl.text = dict["desc"] as? String
         counselorImage.image = UIImage(named: dict["image"] as! String)

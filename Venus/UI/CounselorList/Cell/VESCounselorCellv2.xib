@@ -25,6 +25,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="716" height="448.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogm-cc-xhF">
+                        <rect key="frame" x="0.0" y="0.0" width="716" height="181"/>
+                        <connections>
+                            <action selector="didTapCell:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wfc-bT-hjk"/>
+                        </connections>
+                    </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gj8-kM-UCG">
                         <rect key="frame" x="0.0" y="0.0" width="716" height="181"/>
                         <subviews>
@@ -192,8 +198,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Gj8-kM-UCG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Bh5-zO-YhO"/>
+                    <constraint firstItem="Ogm-cc-xhF" firstAttribute="trailing" secondItem="Gj8-kM-UCG" secondAttribute="trailing" id="Ii7-eZ-6zc"/>
+                    <constraint firstItem="Ogm-cc-xhF" firstAttribute="top" secondItem="Gj8-kM-UCG" secondAttribute="top" id="K7b-1G-Le8"/>
                     <constraint firstAttribute="bottom" secondItem="Gj8-kM-UCG" secondAttribute="bottom" priority="250" id="Qk7-ft-rF8"/>
                     <constraint firstAttribute="trailing" secondItem="Gj8-kM-UCG" secondAttribute="trailing" id="abL-dQ-b6j"/>
+                    <constraint firstItem="Ogm-cc-xhF" firstAttribute="leading" secondItem="Gj8-kM-UCG" secondAttribute="leading" id="j0r-Yd-4LW"/>
+                    <constraint firstItem="Ogm-cc-xhF" firstAttribute="bottom" secondItem="Gj8-kM-UCG" secondAttribute="bottom" id="vD4-v8-lJT"/>
                     <constraint firstItem="Gj8-kM-UCG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zya-bp-73A"/>
                 </constraints>
             </tableViewCellContentView>
@@ -208,6 +218,7 @@
                 <outlet property="descLbl" destination="btL-MZ-GNS" id="nch-eA-U66"/>
                 <outlet property="infoStackView" destination="Y36-5O-WgM" id="9hl-6t-5nM"/>
                 <outlet property="nameLbl" destination="bjv-Mr-oDc" id="jUj-Fg-lT7"/>
+                <outlet property="originalBtn" destination="Ogm-cc-xhF" id="SC8-XJ-bPd"/>
             </connections>
             <point key="canvasLocation" x="223" y="254.5"/>
         </tableViewCell>

@@ -14,10 +14,17 @@ class VESCounselorDetailVC: VESBaseViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    init(detail: Dictionary<String, Any>) {
+        super.init()
+        hidesBottomBarWhenPushed = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }

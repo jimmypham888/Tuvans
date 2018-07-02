@@ -74,7 +74,11 @@ extension VESCounselorListVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(type: VESCounselorCellv2.self, for: indexPath)
-        cell.updateWith(dict: fakeDataArrayDict[indexPath.section])
+        let data = fakeDataArrayDict[indexPath.section]
+        cell.updateWith(dict: data) {
+            let counselorDetail = VESCounselorDetailVC(detail: data)
+            self.navigationController?.pushViewController(counselorDetail, animated: true)
+        }
         return cell
     }
 }
