@@ -12,7 +12,9 @@ class VESCounselorCellv2: VESBaseTableViewCell {
 
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var descLbl: UILabel!
-    @IBOutlet var infoLblCollection: [UILabel]!
+    @IBOutlet weak var counselorImage: UIImageView!
+    @IBOutlet weak var infoStackView: UIStackView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,8 +27,15 @@ class VESCounselorCellv2: VESBaseTableViewCell {
     }
     
     func updateWith(dict: Dictionary<String, Any>) {
-        nameLbl.text = dict["name"] as! String
-        descLbl.text = dict["desc"] as! String
+        nameLbl.text = dict["name"] as? String
+        descLbl.text = dict["desc"] as? String
+        counselorImage.image = UIImage(named: dict["image"] as! String)
+        
+        let infoArray = dict["intro"] as! [String]
+        
+        for (idx, subView) in infoStackView.arrangedSubviews.enumerated() {
+            (subView as! UILabel).text = infoArray[idx]
+        }
     }
     
 }

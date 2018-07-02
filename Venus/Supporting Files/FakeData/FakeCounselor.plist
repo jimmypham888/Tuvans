@@ -7,10 +7,13 @@
 		<string>Nhữ An Lâm Đức</string>
 		<key>desc</key>
 		<string>St. John&apos;s University, 2011-2015</string>
+		<key>image</key>
+		<string>ducnhu</string>
 		<key>intro</key>
 		<array>
-			<string>a</string>
-			<string>b</string>
+			<string>B.S. in Risk Management and Insurance</string>
+			<string>Đã học tập và làm việc ở Mỹ 7 năm</string>
+			<string>Có kinh nghiệm làm việc trong quản lý rủi ro và thương mại điện tử</string>
 		</array>
 	</dict>
 	<dict>
@@ -18,10 +21,41 @@
 		<string>Đỗ Quốc Trung</string>
 		<key>desc</key>
 		<string>Drexel University, 2011-2016</string>
+		<key>image</key>
+		<string>trungdo</string>
 		<key>intro</key>
 		<array>
-			<string>a</string>
-			<string>b</string>
+			<string>B.S. in Computer Engineering</string>
+			<string>Đã học tập và làm việc ở Mỹ 7 năm</string>
+			<string>Có kinh nghiệm làm việc từ start up cho đến trình duyệt 25 triệu người dùng</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nguyễn Huy Việt Đức</string>
+		<key>desc</key>
+		<string>Drexel University, 2011-2016</string>
+		<key>image</key>
+		<string>ducnguyen</string>
+		<key>intro</key>
+		<array>
+			<string>B.S. in Business Administration</string>
+			<string>Đã học tập và làm việc ở Mỹ 8 năm</string>
+			<string>Có kinh nghiệm làm việc trong quỹ đầu tư và thương mại điện tử</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Trần Lê Phương</string>
+		<key>desc</key>
+		<string>Drexel University, 2010-2014</string>
+		<key>image</key>
+		<string>phuongtran</string>
+		<key>intro</key>
+		<array>
+			<string>M.S &amp; B.S. in Chemical Engineering</string>
+			<string>Hiện đang giảng dạy SAT, TOEFL tại YOLA</string>
+			<string>Là founder của STEP education</string>
 		</array>
 	</dict>
 </array>

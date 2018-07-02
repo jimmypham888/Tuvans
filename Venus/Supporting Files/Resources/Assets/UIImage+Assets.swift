@@ -45,8 +45,11 @@ struct ColorAsset {
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 enum Asset {
   enum People {
+    static let ducnguyen = ImageAsset(name: "ducnguyen")
     static let ducnhu = ImageAsset(name: "ducnhu")
     static let ngogiatu = ImageAsset(name: "ngogiatu")
+    static let phuongtran = ImageAsset(name: "phuongtran")
+    static let trungdo = ImageAsset(name: "trungdo")
   }
   static let back = ImageAsset(name: "back")
   static let search = ImageAsset(name: "search")
@@ -55,8 +58,11 @@ enum Asset {
   static let allColors: [ColorAsset] = [
   ]
   static let allImages: [ImageAsset] = [
+    People.ducnguyen,
     People.ducnhu,
     People.ngogiatu,
+    People.phuongtran,
+    People.trungdo,
     back,
     search,
   ]

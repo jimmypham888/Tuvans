@@ -27,7 +27,6 @@ class VESCounselorListVC: VESBaseViewController {
         setEndEditing()
         fakeDataArrayDict = PlistUtility.ReadPlistArray("FakeCounselor")
         listCounselor.reloadData()
-        print(fakeDataArrayDict)
     }
     
     private func configSearchField(_ field: UITextField) {
@@ -38,8 +37,9 @@ class VESCounselorListVC: VESBaseViewController {
         list.dataSource = self
         list.delegate = self
         list.separatorStyle = .none
-        list.rowHeight = 213.0
+        list.rowHeight = 181.0
         list.registerCell(type: VESCounselorCellv2.self)
+        list.contentInset = UIEdgeInsetsMake(0, 0, 8, 0)
     }
 }
 
