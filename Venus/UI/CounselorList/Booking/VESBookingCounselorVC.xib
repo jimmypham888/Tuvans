@@ -85,7 +85,7 @@
                             <rect key="frame" x="0.0" y="72" width="320" height="476"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgH-pr-fVs">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="432"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông tin khách hàng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHi-K9-vpX">
                                             <rect key="frame" x="50" y="16" width="221.5" height="32"/>
@@ -114,7 +114,7 @@
                                                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739726027399" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.81568627450980391" green="0.8784313725490196" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -147,7 +147,7 @@
                                                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.81568627449999997" green="0.87843137250000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,7 +180,7 @@
                                                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.81568627449999997" green="0.87843137250000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -213,7 +213,7 @@
                                                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.81568627449999997" green="0.87843137250000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -255,6 +255,7 @@
                                         <constraint firstItem="nXg-Qg-Edv" firstAttribute="top" secondItem="uHi-K9-vpX" secondAttribute="bottom" constant="16" id="23B-3L-7Wq"/>
                                         <constraint firstItem="7Wa-Cn-Urk" firstAttribute="centerX" secondItem="MgH-pr-fVs" secondAttribute="centerX" id="DtV-VG-ZTW"/>
                                         <constraint firstItem="7Wa-Cn-Urk" firstAttribute="height" secondItem="JGT-QU-8gD" secondAttribute="height" id="Il1-ks-5nS"/>
+                                        <constraint firstAttribute="bottom" secondItem="7Wa-Cn-Urk" secondAttribute="bottom" constant="16" id="X1b-vM-RBj"/>
                                         <constraint firstItem="uHi-K9-vpX" firstAttribute="top" secondItem="MgH-pr-fVs" secondAttribute="top" constant="16" id="YQf-Zi-3Ex"/>
                                         <constraint firstItem="uHi-K9-vpX" firstAttribute="centerX" secondItem="MgH-pr-fVs" secondAttribute="centerX" id="g1l-ka-c7G"/>
                                         <constraint firstItem="nXg-Qg-Edv" firstAttribute="leading" secondItem="MgH-pr-fVs" secondAttribute="leading" constant="32" id="pzB-ij-hN5"/>
@@ -264,6 +265,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
+                            <color key="backgroundColor" red="0.8784313725490196" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="MgH-pr-fVs" firstAttribute="top" secondItem="aMb-96-Taj" secondAttribute="top" id="BJW-Zb-LA5"/>
                                 <constraint firstAttribute="trailing" secondItem="MgH-pr-fVs" secondAttribute="trailing" id="FKW-1h-ydE"/>
@@ -272,7 +274,7 @@
                             </constraints>
                         </scrollView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="aMb-96-Taj" firstAttribute="leading" secondItem="EmP-bh-X4q" secondAttribute="leading" id="1pz-wK-3Vw"/>
                         <constraint firstItem="i8p-Ke-jHP" firstAttribute="leading" secondItem="EmP-bh-X4q" secondAttribute="leading" id="2mO-7B-18G"/>
@@ -298,11 +300,6 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T0F-Sv-shW">
-            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" title="Button"/>
-        </button>
     </objects>
     <resources>
         <image name="account" width="48" height="48"/>
