@@ -14,9 +14,12 @@ class VESBookingCounselorVC: VESBaseViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var descLbl: UILabel!
-    @IBOutlet weak var counselorImage: UIImageView!
+    @IBAction func didTapSend(_ sender: UIButton) {
+        navigationController?.pushViewController(VESBookingSuccessViewController(), animated: true)
+    }
+
+    @IBOutlet weak var statusLbl: UILabel!
+    @IBOutlet weak var infoStack: UIStackView!
     
     private let data: Dictionary<String, Any>
     
@@ -32,14 +35,33 @@ class VESBookingCounselorVC: VESBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        update()
         updateUI()
+        
+        setEndEditing()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
 
+    private func update() {
+        infoStack.arrangedSubviews
+            .compactMap { $0.subviews.first as? UIImageView }
+            .forEach { $0.changeColorImage(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6)) }
+        
+        infoStack.arrangedSubviews
+            .compactMap { $0.subviews[1] as? UITextField }
+            .forEach { $0.delegate = self }
+    }
+    
     private func updateUI() {
-        nameLbl.text = data["name"] as? String
-        descLbl.text = data["desc"] as? String
-        counselorImage.image = UIImage(named: data["image"] as! String)
+        let name = data["name"] as! String
+        statusLbl.text = "Bạn chọn cố vấn: \(name)"
+    }
+}
+
+extension VESBookingCounselorVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

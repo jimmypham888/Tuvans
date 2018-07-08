@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class VESAppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,9 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         window!.backgroundColor = .white
         
         setupWithoutTabBar()
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
         
         return true
     }
