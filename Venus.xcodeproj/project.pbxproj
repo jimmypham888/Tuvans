@@ -555,7 +555,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$TARGET_NAME/App/Script/SwiftGen.sh";
+			shellScript = $TARGET_NAME/App/Script/SwiftGen.sh;
 		};
 		6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
