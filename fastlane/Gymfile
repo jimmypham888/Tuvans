@@ -15,12 +15,12 @@ workspace "Venus.xcworkspace"
 configuration "Release"
 silent true
 output_directory "./build"
-output_name "Venus"
+output_name "Mora"
 
 export_options(
   method: "ad-hoc",
   provisioningProfiles: {
-    "com.tuvans.venus" => "Venus Ad-hoc"
+    "com.moranow.mora" => "Mora_Adhoc"
   },
   uploadBitcode: false,
   uploadSymbols: false,
