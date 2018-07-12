@@ -19,6 +19,6 @@ target 'Venus' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'IQKeyboardManagerSwift'
   pod 'Firebase/Core'
-  pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
 
 end

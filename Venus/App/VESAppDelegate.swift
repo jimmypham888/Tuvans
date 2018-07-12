@@ -9,7 +9,6 @@
 import UIKit
 import IQKeyboardManagerSwift
 import Firebase
-import FirebaseFirestore
 import SVProgressHUD
 
 @UIApplicationMain
@@ -31,12 +30,6 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = false
     
         FirebaseApp.configure()
-        
-        let db = Firestore.firestore()
-        let settings = db.settings
-        settings.areTimestampsInSnapshotsEnabled = true
-        db.settings = settings
-        
         SVProgressHUD.setMinimumDismissTimeInterval(0.65)
         
         return true

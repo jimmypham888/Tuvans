@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseFirestore
+import FirebaseDatabase
 import SVProgressHUD
 
 class VESBookingCounselorVC: VESBaseViewController {
-    
-    var ref: DocumentReference?
 
+    var ref = Database.database().reference()
+    
     @IBAction func didTapBack(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
@@ -111,19 +110,14 @@ class VESBookingCounselorVC: VESBaseViewController {
                                     notes: String,
                                     counselor: String) {
         SVProgressHUD.show()
-        ref = Firestore.firestore().collection("customer").addDocument(data: [
-            "email": email,
-            "name": name,
-            "notes": notes,
-            "number": telNumber,
-            "counselor": counselor
-        ]) { (err) in
+        let customer = ["email": email, "name": name, "phone": telNumber, "notes": notes, "counselor": counselor]
+        ref.child("customers").setValue(customer) { (err, ref) in
             SVProgressHUD.dismiss()
             if let err = err {
                 print("Error adding document: \(err)")
             } else {
                 self.navigationController?.pushViewController(VESBookingSuccessViewController(), animated: true)
-                print("Document added with ID: \(self.ref!.documentID)")
+                print("Document added with ID: \(ref.description())")
             }
         }
     }
