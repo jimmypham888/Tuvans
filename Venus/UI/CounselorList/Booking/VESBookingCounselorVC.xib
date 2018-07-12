@@ -18,7 +18,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VESBookingCounselorVC" customModule="Venus" customModuleProvider="target">
             <connections>
+                <outlet property="emailLbl" destination="gYm-Ta-GEZ" id="xWW-CM-WRC"/>
                 <outlet property="infoStack" destination="nXg-Qg-Edv" id="vCG-Ja-87D"/>
+                <outlet property="messageLbl" destination="v40-IA-vVf" id="bD8-DB-cww"/>
+                <outlet property="nameLbl" destination="UQk-v6-nxn" id="lsm-R3-xZ7"/>
+                <outlet property="phoneNumberLbl" destination="hEQ-Uv-5Jo" id="R4I-WN-Ud2"/>
+                <outlet property="sendbtn" destination="7Wa-Cn-Urk" id="Nci-zq-Feq"/>
                 <outlet property="statusLbl" destination="aYg-mi-n2p" id="siK-pr-oEb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="wrraperView" destination="EmP-bh-X4q" id="Ml2-ku-xrr"/>

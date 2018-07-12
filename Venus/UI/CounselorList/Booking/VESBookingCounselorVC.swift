@@ -7,17 +7,38 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
+import SVProgressHUD
 
 class VESBookingCounselorVC: VESBaseViewController {
+    
+    var ref: DocumentReference?
 
     @IBAction func didTapBack(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
     
     @IBAction func didTapSend(_ sender: UIButton) {
-        navigationController?.pushViewController(VESBookingSuccessViewController(), animated: true)
+        sendbtn.isEnabled = false
+        let result = validate { (email, name, notes, number) in
+            uploadCustomerInfo(name: name,
+                               email: email,
+                               telNumber: number,
+                               notes: notes,
+                               counselor: data["name"] as! String)
+        }
+        
+        if !result {
+            sendbtn.isEnabled = true
+        }
     }
 
+    @IBOutlet weak var sendbtn: UIButton!
+    @IBOutlet weak var messageLbl: UITextField!
+    @IBOutlet weak var phoneNumberLbl: UITextField!
+    @IBOutlet weak var nameLbl: UITextField!
+    @IBOutlet weak var emailLbl: UITextField!
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var infoStack: UIStackView!
     
@@ -51,6 +72,60 @@ class VESBookingCounselorVC: VESBaseViewController {
         infoStack.arrangedSubviews
             .compactMap { $0.subviews[1] as? UITextField }
             .forEach { $0.delegate = self }
+    }
+    
+    private func validate(success:(String, String, String, String) -> ()) -> Bool {
+        
+        guard let name = nameLbl.text, name.count > 2 else {
+            SVProgressHUD.showInfo(withStatus: "Vui lòng nhập đầy đủ họ tên!")
+            nameLbl.becomeFirstResponder()
+            return false
+        }
+        
+        guard let email = emailLbl.text, email.count > 0 else {
+            SVProgressHUD.showInfo(withStatus: "Vui lòng nhập email!")
+            emailLbl.becomeFirstResponder()
+            return false
+        }
+        
+        if !email.isValidEmail() {
+            emailLbl.becomeFirstResponder()
+            SVProgressHUD.showInfo(withStatus: "Vui lòng nhập lại email!")
+            return false
+        }
+        
+        guard let tel = phoneNumberLbl.text, tel.isPhoneNumber else {
+            phoneNumberLbl.becomeFirstResponder()
+            SVProgressHUD.showInfo(withStatus: "Vui lòng nhập chính xác số điện thoại!")
+            return false
+        }
+        
+        success(email, name, messageLbl.text ?? "", tel)
+        
+        return true
+    }
+    
+    private func uploadCustomerInfo(name: String,
+                                    email: String,
+                                    telNumber: String,
+                                    notes: String,
+                                    counselor: String) {
+        SVProgressHUD.show()
+        ref = Firestore.firestore().collection("customer").addDocument(data: [
+            "email": email,
+            "name": name,
+            "notes": notes,
+            "number": telNumber,
+            "counselor": counselor
+        ]) { (err) in
+            SVProgressHUD.dismiss()
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                self.navigationController?.pushViewController(VESBookingSuccessViewController(), animated: true)
+                print("Document added with ID: \(self.ref!.documentID)")
+            }
+        }
     }
     
     private func updateUI() {
