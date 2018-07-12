@@ -53,14 +53,7 @@ class VESCounselorListVC: VESBaseViewController {
                 
                 strongSelf.searchResultFakeData = strongSelf.fakeDataArrayDict.filter({ (dict) -> Bool in
                     guard let name = dict["name"] as? String else { return false }
-                    
-                    print(name)
-                    print(query)
-                    
-                    let isContains = name.contains(query)
-                    
-                    print("Name: \(name) contains query: \(query). Result: \(isContains)")
-                    
+                    let isContains = name.lowercased().contains(query.lowercased())
                     return isContains
                 })
                 strongSelf.listCounselor.reloadData()
