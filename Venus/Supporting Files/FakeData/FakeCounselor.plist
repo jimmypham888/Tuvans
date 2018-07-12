@@ -4,34 +4,98 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Nhữ An Lâm Đức</string>
+		<string>Nguyễn Hoàng Khánh</string>
 		<key>desc</key>
-		<string>St. John&apos;s University, 2011-2015</string>
+		<string>Havard University, 2016-2019</string>
 		<key>image</key>
-		<string>ducnhu</string>
+		<string>khanhnguyen</string>
 		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/ACoAAAtcaAcBp_EdUDD-dQ9PeZIFHeni8vDBmM0/</string>
+		<string>https://www.linkedin.com/in/khanhnguyen205/</string>
 		<key>intro</key>
 		<array>
-			<string>B.S. in Risk Management and Insurance</string>
-			<string>Đã học tập và làm việc ở Mỹ 7 năm</string>
-			<string>Có kinh nghiệm làm việc trong quản lý rủi ro và thương mại điện tử</string>
+			<string>J.D Candidate at Harvard Law School</string>
+			<string>Có kinh nghiệm làm việc cho World Bank </string>
+			<string>Đang theo học tiến sĩ luật tại đại học Havard ở thành phố Boston</string>
 		</array>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Đỗ Quốc Trung</string>
+		<string>Bùi Minh Nhật</string>
 		<key>desc</key>
-		<string>Drexel University, 2011-2016</string>
+		<string>Pace University, 2015-2017</string>
 		<key>image</key>
-		<string>trungdo</string>
+		<string>nhatbui</string>
 		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/trungdo1993/</string>
+		<string>https://www.linkedin.com/in/minhbui1/</string>
 		<key>intro</key>
 		<array>
-			<string>B.S. in Computer Engineering</string>
-			<string>Đã học tập và làm việc ở Mỹ 7 năm</string>
-			<string>Có kinh nghiệm làm việc từ start up cho đến trình duyệt 25 triệu người dùng</string>
+			<string>M.S. in Customer Intelligence</string>
+			<string>Có kinh nghiệm giảng dạy tại đại học Columbia</string>
+			<string>Làm việc tại Mindshare, công ty lớn về truyền thông và marketing tại thành phố New York</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Đỗ Xuân Cường</string>
+		<key>desc</key>
+		<string>University of Connecticut, 2004-2009</string>
+		<key>image</key>
+		<string>cuongdo</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/cuong-do-11129124/</string>
+		<key>intro</key>
+		<array>
+			<string>Đã học và làm ở Mỹ 20 năm</string>
+			<string>Hiện đang là giáo sư đại học Connecticut</string>
+			<string>Nhiều năm kinh nghiệm trong giảng dạy và phát triển về Machine Learning, Data Science</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Trần Lê Phương</string>
+		<key>desc</key>
+		<string>Drexel University, 2010-2014</string>
+		<key>image</key>
+		<string>phuongtran-2</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/phuong-tran-85bb5463/</string>
+		<key>intro</key>
+		<array>
+			<string>M.S &amp; B.S. in Chemical Engineering</string>
+			<string>Hiện đang giảng dạy SAT, TOEFL tại YOLA</string>
+			<string>Là founder của STEP education</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lê Trường Giang</string>
+		<key>desc</key>
+		<string>Franklin &amp; Marshall College, 2014-2018</string>
+		<key>image</key>
+		<string>giangle</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/giangtruongle/</string>
+		<key>intro</key>
+		<array>
+			<string>B.S. in Joint Major Government &amp; International Studies</string>
+			<string>Hiện đang là nhân viên của The Economist Intelligence Unit</string>
+			<string>Đang là nhân viên của Vietnam Investor Network</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Đào Xuân Thắng</string>
+		<key>desc</key>
+		<string>Drexel University, 2010-2015</string>
+		<key>image</key>
+		<string>thangdao</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/thangd/</string>
+		<key>intro</key>
+		<array>
+			<string>B.S in Computer Engineering</string>
+			<string>M.S in Cyber Security</string>
+			<string>Hiện đang là kỹ sư phần mềm cho Comcast, 1 trong những tập đoàn số 1 của Mỹ về viễn thông</string>
 		</array>
 	</dict>
 	<dict>
@@ -52,18 +116,50 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Trần Lê Phương</string>
+		<string>Đỗ Quốc Trung</string>
 		<key>desc</key>
-		<string>Drexel University, 2010-2014</string>
+		<string>Drexel University, 2011-2016</string>
 		<key>image</key>
-		<string>phuongtran</string>
+		<string>trungdo</string>
 		<key>linkedin</key>
-		<string>https://www.linkedin.com/in/phuong-tran-85bb5463/</string>
+		<string>https://www.linkedin.com/in/trungdo1993/</string>
 		<key>intro</key>
 		<array>
-			<string>M.S &amp; B.S. in Chemical Engineering</string>
-			<string>Hiện đang giảng dạy SAT, TOEFL tại YOLA</string>
-			<string>Là founder của STEP education</string>
+			<string>B.S. in Computer Engineering</string>
+			<string>Đã học tập và làm việc ở Mỹ 7 năm</string>
+			<string>Có kinh nghiệm làm việc từ start up cho đến trình duyệt 25 triệu người dùng</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nhữ An Lâm Đức</string>
+		<key>desc</key>
+		<string>St. John&apos;s University, 2011-2015</string>
+		<key>image</key>
+		<string>ducnhu</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/ACoAAAtcaAcBp_EdUDD-dQ9PeZIFHeni8vDBmM0/</string>
+		<key>intro</key>
+		<array>
+			<string>B.S. in Risk Management and Insurance</string>
+			<string>Đã học tập và làm việc ở Mỹ 7 năm</string>
+			<string>Có kinh nghiệm làm việc trong quản lý rủi ro và thương mại điện tử</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nguyễn Kim Long</string>
+		<key>desc</key>
+		<string>Drexel University, 2006-2017</string>
+		<key>image</key>
+		<string>longnguyen</string>
+		<key>linkedin</key>
+		<string>https://www.linkedin.com/in/long-nguyen-a7690843/</string>
+		<key>intro</key>
+		<array>
+			<string>B.S. in Architectural Engineering</string>
+			<string>M.S. in Civil Engineering</string>
+			<string>PhD. in Civil Engineering</string>
 		</array>
 	</dict>
 </array>
