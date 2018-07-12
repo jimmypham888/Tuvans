@@ -18,5 +18,7 @@ target 'Venus' do
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end

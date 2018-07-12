@@ -8,6 +8,8 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class VESAppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,8 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    var ref: DatabaseReference!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = self.window ?? UIWindow()
@@ -27,6 +31,9 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
+        
+        FirebaseApp.configure()
+        ref = Database.database().reference()
         
         return true
     }

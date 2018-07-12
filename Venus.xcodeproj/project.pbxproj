@@ -11,6 +11,7 @@
 		6C1BACC320F290220037738A /* VESBookingSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1BACC120F290220037738A /* VESBookingSuccessViewController.xib */; };
 		6C2D0D0120EA8F0F00B2444F /* VESBookingCounselorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D0CFF20EA8F0F00B2444F /* VESBookingCounselorVC.swift */; };
 		6C2D0D0220EA8F0F00B2444F /* VESBookingCounselorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D0D0020EA8F0F00B2444F /* VESBookingCounselorVC.xib */; };
+		6C2E79FD20F78C1B00EE5870 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E79FC20F78C1B00EE5870 /* GoogleService-Info.plist */; };
 		6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */; };
 		6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */; };
 		6C5C7EB420DF8EF7009C075F /* SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */; };
@@ -38,7 +39,6 @@
 		6CAD5DCB20E8F3CC00B56ADD /* VESCounselorCellv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD5DC920E8F3CC00B56ADD /* VESCounselorCellv2.swift */; };
 		6CAD5DCC20E8F3CC00B56ADD /* VESCounselorCellv2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5DCA20E8F3CC00B56ADD /* VESCounselorCellv2.xib */; };
 		6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264020D97C6E0054C134 /* awsconfiguration.json */; };
-		6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */; };
 		6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */; };
 		6CE6C18520CB899700B58B86 /* VESBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18420CB899700B58B86 /* VESBaseViewController.swift */; };
 		6CE6C18720CB8A1500B58B86 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18620CB8A1500B58B86 /* NibLoadableView.swift */; };
@@ -69,6 +69,7 @@
 		6C1BACC120F290220037738A /* VESBookingSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESBookingSuccessViewController.xib; sourceTree = "<group>"; };
 		6C2D0CFF20EA8F0F00B2444F /* VESBookingCounselorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBookingCounselorVC.swift; sourceTree = "<group>"; };
 		6C2D0D0020EA8F0F00B2444F /* VESBookingCounselorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESBookingCounselorVC.xib; sourceTree = "<group>"; };
+		6C2E79FC20F78C1B00EE5870 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Atomic.swift; sourceTree = "<group>"; };
 		6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
 		6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTask.swift; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		6CAD5DC920E8F3CC00B56ADD /* VESCounselorCellv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorCellv2.swift; sourceTree = "<group>"; };
 		6CAD5DCA20E8F3CC00B56ADD /* VESCounselorCellv2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorCellv2.xib; sourceTree = "<group>"; };
 		6CE0264020D97C6E0054C134 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESAppDelegate.swift; sourceTree = "<group>"; };
 		6CE6C18420CB899700B58B86 /* VESBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBaseViewController.swift; sourceTree = "<group>"; };
 		6CE6C18620CB8A1500B58B86 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -384,8 +384,8 @@
 				6C5C7EBF20DFB62E009C075F /* Resources */,
 				6CE6C1A020CB8CBF00B58B86 /* EnvConfiguration.plist */,
 				6C7020F120C6D3DE006AFEE5 /* Info.plist */,
+				6C2E79FC20F78C1B00EE5870 /* GoogleService-Info.plist */,
 				6CE0264020D97C6E0054C134 /* awsconfiguration.json */,
-				6CE0264220D97C780054C134 /* GoogleService-Info-2.plist */,
 				6C7020EC20C6D3DE006AFEE5 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
@@ -479,8 +479,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE6C1A120CB8CBF00B58B86 /* EnvConfiguration.plist in Resources */,
+				6C2E79FD20F78C1B00EE5870 /* GoogleService-Info.plist in Resources */,
 				6C7020F020C6D3DE006AFEE5 /* LaunchScreen.storyboard in Resources */,
-				6CE0264320D97C780054C134 /* GoogleService-Info-2.plist in Resources */,
 				6C8B952220CB9A7600F68D03 /* VESCounselorListVC.xib in Resources */,
 				6C69BB7E20DFFAF40039DA48 /* OpenSans-Light.ttf in Resources */,
 				6C69BB7D20DFFAF40039DA48 /* OpenSans-Semibold.ttf in Resources */,
@@ -511,6 +511,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
@@ -522,11 +523,14 @@
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
@@ -538,6 +542,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -555,7 +561,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $TARGET_NAME/App/Script/SwiftGen.sh;
+			shellScript = "$TARGET_NAME/App/Script/SwiftGen.sh";
 		};
 		6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
