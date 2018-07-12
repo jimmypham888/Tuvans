@@ -11,6 +11,23 @@
 		<string>khanhnguyen</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/khanhnguyen205/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Havard</string>
+			<key>location</key>
+			<string>Boston, MA</string>
+			<key>degree</key>
+			<string>Doctor</string>
+			<key>major</key>
+			<string>Law</string>
+			<key>company</key>
+			<string>World Bank</string>
+			<key>com_location</key>
+			<string>Washington D.C. Metro Area</string>
+			<key>position</key>
+			<string>Investigation and Litigation Fellow</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>J.D Candidate at Harvard Law School</string>
@@ -27,6 +44,23 @@
 		<string>nhatbui</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/minhbui1/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Pace</string>
+			<key>location</key>
+			<string>New York, NY</string>
+			<key>degree</key>
+			<string>Master of Science</string>
+			<key>major</key>
+			<string>Customer Intelligence &amp; Analytics</string>
+			<key>company</key>
+			<string>Mindshare</string>
+			<key>com_location</key>
+			<string>New York, NY</string>
+			<key>position</key>
+			<string>Senior Associate, Marketing Sciences</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>M.S. in Customer Intelligence</string>
@@ -43,6 +77,23 @@
 		<string>cuongdo</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/cuong-do-11129124/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Connecticut</string>
+			<key>location</key>
+			<string>Front St, Hartford, CT</string>
+			<key>degree</key>
+			<string>Doctor of Philosophy</string>
+			<key>major</key>
+			<string>Electrical &amp; Computer Engineering</string>
+			<key>company</key>
+			<string>University of Connecticut</string>
+			<key>com_location</key>
+			<string>Front St, Hartford, CT</string>
+			<key>position</key>
+			<string>Data Scientist</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>Đã học và làm ở Mỹ 20 năm</string>
@@ -59,6 +110,23 @@
 		<string>phuongtran-2</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/phuong-tran-85bb5463/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Drexel</string>
+			<key>location</key>
+			<string>Philadelphia, PA</string>
+			<key>degree</key>
+			<string>Master of Science</string>
+			<key>major</key>
+			<string>Chemical Engineering</string>
+			<key>company</key>
+			<string>Yola</string>
+			<key>com_location</key>
+			<string>Ho Chi Minh City, Vietnam</string>
+			<key>position</key>
+			<string>SAT, TOEFL tutor</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>M.S &amp; B.S. in Chemical Engineering</string>
@@ -75,6 +143,23 @@
 		<string>giangle</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/giangtruongle/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Franklin &amp; Marshall College</string>
+			<key>location</key>
+			<string>Lancaster, PA</string>
+			<key>degree</key>
+			<string>Bachelor</string>
+			<key>major</key>
+			<string>Joint Major Government &amp; International Studies</string>
+			<key>company</key>
+			<string>The Economist Intelligence Unit (The EIU)</string>
+			<key>com_location</key>
+			<string>London, UK</string>
+			<key>position</key>
+			<string>Contributor, Country Risk Service</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Joint Major Government &amp; International Studies</string>
@@ -91,6 +176,23 @@
 		<string>thangdao</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/thangd/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Drexel</string>
+			<key>location</key>
+			<string>Philadelphia, PA</string>
+			<key>degree</key>
+			<string>Master of Science</string>
+			<key>major</key>
+			<string>Computer Engineering</string>
+			<key>company</key>
+			<string>Comcast</string>
+			<key>com_location</key>
+			<string>Philadelphia, PA</string>
+			<key>position</key>
+			<string>Senior Software Engineer</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S in Computer Engineering</string>
@@ -107,6 +209,23 @@
 		<string>ducnguyen</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/ducnguyen93/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Drexel</string>
+			<key>location</key>
+			<string>Philadelphia, PA</string>
+			<key>degree</key>
+			<string>Bachelor of Science</string>
+			<key>major</key>
+			<string>Business Administration</string>
+			<key>company</key>
+			<string>Shopee</string>
+			<key>com_location</key>
+			<string>Hanoi, Vietnam</string>
+			<key>position</key>
+			<string>Category Manager</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Business Administration</string>
@@ -123,6 +242,23 @@
 		<string>trungdo</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/trungdo1993/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Drexel</string>
+			<key>location</key>
+			<string>Philadelphia, PA</string>
+			<key>degree</key>
+			<string>Bachelor of Science</string>
+			<key>major</key>
+			<string>Computer Engineering</string>
+			<key>company</key>
+			<string>Coc Coc Inc</string>
+			<key>com_location</key>
+			<string>Hanoi, Vietnam</string>
+			<key>position</key>
+			<string>Software Engineer</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Computer Engineering</string>
@@ -139,6 +275,23 @@
 		<string>ducnhu</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/ACoAAAtcaAcBp_EdUDD-dQ9PeZIFHeni8vDBmM0/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Saint John</string>
+			<key>location</key>
+			<string>New York, NY</string>
+			<key>degree</key>
+			<string>Bachelor of Science</string>
+			<key>major</key>
+			<string>Risk Management and Insurance</string>
+			<key>company</key>
+			<string>Colas Inc.</string>
+			<key>com_location</key>
+			<string>Morristown, New Jersey</string>
+			<key>position</key>
+			<string>Risk Management Analyst</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Risk Management and Insurance</string>
@@ -155,6 +308,23 @@
 		<string>longnguyen</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/long-nguyen-a7690843/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string>Drexel</string>
+			<key>location</key>
+			<string>Philadelphia, PA</string>
+			<key>degree</key>
+			<string>Doctor of Philosophy</string>
+			<key>major</key>
+			<string>Civil Engineering</string>
+			<key>company</key>
+			<string>Siemanowski Engineering Inc</string>
+			<key>com_location</key>
+			<string>Wilmington, Delaware</string>
+			<key>position</key>
+			<string>Civil Structural Engineer</string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Architectural Engineering</string>
