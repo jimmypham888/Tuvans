@@ -11,6 +11,23 @@
 		<string>khanhnguyen</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/khanhnguyen205/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>J.D Candidate at Harvard Law School</string>
@@ -27,6 +44,23 @@
 		<string>nhatbui</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/minhbui1/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>M.S. in Customer Intelligence</string>
@@ -43,6 +77,23 @@
 		<string>cuongdo</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/cuong-do-11129124/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>Đã học và làm ở Mỹ 20 năm</string>
@@ -59,6 +110,23 @@
 		<string>phuongtran-2</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/phuong-tran-85bb5463/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>M.S &amp; B.S. in Chemical Engineering</string>
@@ -75,6 +143,23 @@
 		<string>giangle</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/giangtruongle/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Joint Major Government &amp; International Studies</string>
@@ -91,6 +176,23 @@
 		<string>thangdao</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/thangd/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S in Computer Engineering</string>
@@ -107,6 +209,23 @@
 		<string>ducnguyen</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/ducnguyen93/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Business Administration</string>
@@ -123,6 +242,23 @@
 		<string>trungdo</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/trungdo1993/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Computer Engineering</string>
@@ -139,6 +275,23 @@
 		<string>ducnhu</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/ACoAAAtcaAcBp_EdUDD-dQ9PeZIFHeni8vDBmM0/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Risk Management and Insurance</string>
@@ -155,6 +308,23 @@
 		<string>longnguyen</string>
 		<key>linkedin</key>
 		<string>https://www.linkedin.com/in/long-nguyen-a7690843/</string>
+		<key>detail</key>
+		<dict>
+			<key>university</key>
+			<string></string>
+			<key>location</key>
+			<string></string>
+			<key>degree</key>
+			<string></string>
+			<key>major</key>
+			<string></string>
+			<key>company</key>
+			<string></string>
+			<key>com_location</key>
+			<string></string>
+			<key>position</key>
+			<string></string>
+		</dict>
 		<key>intro</key>
 		<array>
 			<string>B.S. in Architectural Engineering</string>
