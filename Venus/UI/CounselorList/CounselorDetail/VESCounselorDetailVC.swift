@@ -31,6 +31,15 @@ class VESCounselorDetailVC: VESBaseViewController {
     @IBOutlet var degreesCollection: [UILabel]!
     @IBOutlet var jobCollection: [UILabel]!
     
+    // Detail information
+    @IBOutlet weak var universityLbl: UILabel!
+    @IBOutlet weak var locationLbl: UILabel!
+    @IBOutlet weak var degreeLbl: UILabel!
+    @IBOutlet weak var majorLbl: UILabel!
+    @IBOutlet weak var companyLbl: UILabel!
+    @IBOutlet weak var companyLocationLbl: UILabel!
+    @IBOutlet weak var companyPositionLbl: UILabel!
+    
     private let data: Dictionary<String, Any>
     
     init(detail: Dictionary<String, Any>) {
@@ -67,5 +76,26 @@ class VESCounselorDetailVC: VESBaseViewController {
         nameLbl.text = data["name"] as? String
         descLbl.text = data["desc"] as? String
         counselorImage.image = UIImage(named: data["image"] as! String)
+        
+        let detailInfo = data["detail"] as! Dictionary<String, Any>
+        updateUIDetail(detailInfo)
+    }
+    
+    private func updateUIDetail(_ detail: Dictionary<String, Any>) {
+        let university = detail["university"] as? String
+        let location = detail["location"] as? String
+        let degree = detail["degree"] as? String
+        let major = detail["major"] as? String
+        let company = detail["company"] as? String
+        let comLocation = detail["com_location"] as? String
+        let position = detail["position"] as? String
+        
+        universityLbl.text = university
+        locationLbl.text = location
+        degreeLbl.text = degree
+        majorLbl.text = major
+        companyLbl.text = company
+        companyLocationLbl.text = comLocation
+        companyPositionLbl.text = position
     }
 }

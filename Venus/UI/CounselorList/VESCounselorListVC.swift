@@ -44,31 +44,29 @@ class VESCounselorListVC: VESBaseViewController {
             .distinctUntilChanged()
             .subscribe(onNext: { [weak self] (query) in
                 guard let strongSelf = self else { return }
-                
                 if query == "" {
                     strongSelf.searchResultFakeData = strongSelf.fakeDataArrayDict
                     strongSelf.listCounselor.reloadData()
                     return
                 }
-                
                 strongSelf.searchResultFakeData = strongSelf.fakeDataArrayDict.filter({ (dict) -> Bool in
                     guard let name = dict["name"] as? String else { return false }
                     let isContains = name.lowercased().contains(query.lowercased())
                     return isContains
                 })
                 strongSelf.listCounselor.reloadData()
+                
+                let transition = CATransition()
+                transition.type = kCATransitionFade
+                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+                transition.fillMode = kCAFillModeForwards
+                transition.duration = 0.5
+                transition.subtype = kCATransitionFromTop
+                strongSelf.listCounselor.layer.add(transition, forKey: "UITableViewReloadDataAnimationKey")
+                // Update your data source here
+                strongSelf.listCounselor.reloadData()
             })
             .disposed(by: disposeBag)
-//        searchBar
-//            .rx.text // Observable property thanks to RxCocoa
-//            .orEmpty // Make it non-optional
-//            .debounce(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
-//            .distinctUntilChanged() // If they didn't occur, check if the new value is the same as old.
-//            .subscribe(onNext: { [unowned self] query in // Here we subscribe to every new value
-//                self.shownCities = self.allCities.filter { $0.hasPrefix(query) } // We now do our "API Request" to find cities.
-//                self.tableView.reloadData() // And reload table view data.
-//            })
-//            .addDisposableTo(disposeBag)
     }
 
     private func configList(_ list: UITableView) {

@@ -19,9 +19,16 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VESCounselorDetailVC" customModule="Venus" customModuleProvider="target">
             <connections>
                 <outlet property="bookBtnView" destination="WQ2-4v-A2K" id="uCe-az-x9k"/>
+                <outlet property="companyLbl" destination="vHi-82-T5o" id="cmm-WX-PNg"/>
+                <outlet property="companyLocationLbl" destination="kh9-PE-68a" id="fxY-iK-QB4"/>
+                <outlet property="companyPositionLbl" destination="tia-0F-k53" id="bJ4-hP-gAA"/>
                 <outlet property="counselorImage" destination="VkP-lI-hIj" id="N95-Wg-G0M"/>
+                <outlet property="degreeLbl" destination="fwg-uX-vqe" id="uba-YM-ejy"/>
                 <outlet property="descLbl" destination="dYO-Dd-DWI" id="WMD-cg-3dG"/>
+                <outlet property="locationLbl" destination="2Rw-3y-CoI" id="Rmz-B8-xQ0"/>
+                <outlet property="majorLbl" destination="kLJ-Fs-ixh" id="zGQ-XH-x52"/>
                 <outlet property="nameLbl" destination="M5T-o2-0cy" id="QoV-r5-OCN"/>
+                <outlet property="universityLbl" destination="uXy-Tb-E4h" id="DKs-Ld-aiT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="wrraperView" destination="EcG-cH-qPs" id="mGh-yW-RGO"/>
                 <outletCollection property="degreesCollection" destination="uXy-Tb-E4h" collectionClass="NSMutableArray" id="gfZ-CY-57W"/>
