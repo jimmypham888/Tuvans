@@ -14,19 +14,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Havard</string>
 			<key>location</key>
-			<string></string>
+			<string>Boston, MA</string>
 			<key>degree</key>
-			<string></string>
+			<string>Doctor</string>
 			<key>major</key>
-			<string></string>
+			<string>Law</string>
 			<key>company</key>
-			<string></string>
+			<string>World Bank</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Washington D.C. Metro Area</string>
 			<key>position</key>
-			<string></string>
+			<string>Investigation and Litigation Fellow</string>
 		</dict>
 		<key>intro</key>
 		<array>
