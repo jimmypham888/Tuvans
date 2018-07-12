@@ -47,19 +47,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Pace</string>
 			<key>location</key>
-			<string></string>
+			<string>New York, NY</string>
 			<key>degree</key>
-			<string></string>
+			<string>Master of Science</string>
 			<key>major</key>
-			<string></string>
+			<string>Customer Intelligence &amp; Analytics</string>
 			<key>company</key>
-			<string></string>
+			<string>Mindshare</string>
 			<key>com_location</key>
-			<string></string>
+			<string>New York, NY</string>
 			<key>position</key>
-			<string></string>
+			<string>Senior Associate, Marketing Sciences</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -80,19 +80,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Connecticut</string>
 			<key>location</key>
-			<string></string>
+			<string>Front St, Hartford, CT</string>
 			<key>degree</key>
-			<string></string>
+			<string>Doctor of Philosophy</string>
 			<key>major</key>
-			<string></string>
+			<string>Electrical &amp; Computer Engineering</string>
 			<key>company</key>
-			<string></string>
+			<string>University of Connecticut</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Front St, Hartford, CT</string>
 			<key>position</key>
-			<string></string>
+			<string>Data Scientist</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -113,19 +113,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Drexel</string>
 			<key>location</key>
-			<string></string>
+			<string>Philadelphia, PA</string>
 			<key>degree</key>
-			<string></string>
+			<string>Master of Science</string>
 			<key>major</key>
-			<string></string>
+			<string>Chemical Engineering</string>
 			<key>company</key>
-			<string></string>
+			<string>Yola</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Ho Chi Minh City, Vietnam</string>
 			<key>position</key>
-			<string></string>
+			<string>SAT, TOEFL tutor</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -146,19 +146,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Franklin &amp; Marshall College</string>
 			<key>location</key>
-			<string></string>
+			<string>Lancaster, PA</string>
 			<key>degree</key>
-			<string></string>
+			<string>Bachelor</string>
 			<key>major</key>
-			<string></string>
+			<string>Joint Major Government &amp; International Studies</string>
 			<key>company</key>
-			<string></string>
+			<string>The Economist Intelligence Unit (The EIU)</string>
 			<key>com_location</key>
-			<string></string>
+			<string>London, UK</string>
 			<key>position</key>
-			<string></string>
+			<string>Contributor, Country Risk Service</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -179,19 +179,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Drexel</string>
 			<key>location</key>
-			<string></string>
+			<string>Philadelphia, PA</string>
 			<key>degree</key>
-			<string></string>
+			<string>Master of Science</string>
 			<key>major</key>
-			<string></string>
+			<string>Computer Engineering</string>
 			<key>company</key>
-			<string></string>
+			<string>Comcast</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Philadelphia, PA</string>
 			<key>position</key>
-			<string></string>
+			<string>Senior Software Engineer</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -212,19 +212,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Drexel</string>
 			<key>location</key>
-			<string></string>
+			<string>Philadelphia, PA</string>
 			<key>degree</key>
-			<string></string>
+			<string>Bachelor of Science</string>
 			<key>major</key>
-			<string></string>
+			<string>Business Administration</string>
 			<key>company</key>
-			<string></string>
+			<string>Shopee</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Hanoi, Vietnam</string>
 			<key>position</key>
-			<string></string>
+			<string>Category Manager</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -245,19 +245,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Drexel</string>
 			<key>location</key>
-			<string></string>
+			<string>Philadelphia, PA</string>
 			<key>degree</key>
-			<string></string>
+			<string>Bachelor of Science</string>
 			<key>major</key>
-			<string></string>
+			<string>Computer Engineering</string>
 			<key>company</key>
-			<string></string>
+			<string>Coc Coc Inc</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Hanoi, Vietnam</string>
 			<key>position</key>
-			<string></string>
+			<string>Software Engineer</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -278,19 +278,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Saint John</string>
 			<key>location</key>
-			<string></string>
+			<string>New York, NY</string>
 			<key>degree</key>
-			<string></string>
+			<string>Bachelor of Science</string>
 			<key>major</key>
-			<string></string>
+			<string>Risk Management and Insurance</string>
 			<key>company</key>
-			<string></string>
+			<string>Colas Inc.</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Morristown, New Jersey</string>
 			<key>position</key>
-			<string></string>
+			<string>Risk Management Analyst</string>
 		</dict>
 		<key>intro</key>
 		<array>
@@ -311,19 +311,19 @@
 		<key>detail</key>
 		<dict>
 			<key>university</key>
-			<string></string>
+			<string>Drexel</string>
 			<key>location</key>
-			<string></string>
+			<string>Philadelphia, PA</string>
 			<key>degree</key>
-			<string></string>
+			<string>Doctor of Philosophy</string>
 			<key>major</key>
-			<string></string>
+			<string>Civil Engineering</string>
 			<key>company</key>
-			<string></string>
+			<string>Siemanowski Engineering Inc</string>
 			<key>com_location</key>
-			<string></string>
+			<string>Wilmington, Delaware</string>
 			<key>position</key>
-			<string></string>
+			<string>Civil Structural Engineer</string>
 		</dict>
 		<key>intro</key>
 		<array>
