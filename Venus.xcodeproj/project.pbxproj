@@ -561,7 +561,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$TARGET_NAME/App/Script/SwiftGen.sh";
+			shellScript = $TARGET_NAME/App/Script/SwiftGen.sh;
 		};
 		6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -793,8 +793,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moranow.mora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5740550f-86db-48ec-9d44-7f825b2fb59f";
-				PROVISIONING_PROFILE_SPECIFIER = Mora_Adhoc;
+				PROVISIONING_PROFILE = "1f31cdd7-887c-49ae-bfc6-abfbc3fbc908";
+				PROVISIONING_PROFILE_SPECIFIER = Mora_App;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
