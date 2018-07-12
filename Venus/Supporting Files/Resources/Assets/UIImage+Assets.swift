@@ -52,10 +52,17 @@ enum Asset {
   }
   static let linkedin = ImageAsset(name: "Linkedin")
   enum People {
+    static let cuongdo = ImageAsset(name: "cuongdo")
     static let ducnguyen = ImageAsset(name: "ducnguyen")
     static let ducnhu = ImageAsset(name: "ducnhu")
+    static let giangle = ImageAsset(name: "giangle")
+    static let khanhnguyen = ImageAsset(name: "khanhnguyen")
+    static let longnguyen = ImageAsset(name: "longnguyen")
     static let ngogiatu = ImageAsset(name: "ngogiatu")
+    static let nhatbui = ImageAsset(name: "nhatbui")
+    static let phuongtran2 = ImageAsset(name: "phuongtran-2")
     static let phuongtran = ImageAsset(name: "phuongtran")
+    static let thangdao = ImageAsset(name: "thangdao")
     static let trungdo = ImageAsset(name: "trungdo")
   }
   static let addBlack = ImageAsset(name: "add_black")
@@ -72,10 +79,17 @@ enum Asset {
     Booking.message,
     Booking.smartphone,
     linkedin,
+    People.cuongdo,
     People.ducnguyen,
     People.ducnhu,
+    People.giangle,
+    People.khanhnguyen,
+    People.longnguyen,
     People.ngogiatu,
+    People.nhatbui,
+    People.phuongtran2,
     People.phuongtran,
+    People.thangdao,
     People.trungdo,
     addBlack,
     back,

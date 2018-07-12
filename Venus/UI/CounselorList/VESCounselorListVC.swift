@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class VESCounselorListVC: VESBaseViewController {
 
@@ -19,6 +21,8 @@ class VESCounselorListVC: VESBaseViewController {
     @IBOutlet weak var searchField: UITextField!
     
     private var fakeDataArrayDict: [Dictionary<String, Any>] = []
+    private var searchResultFakeData: [Dictionary<String,Any>] = []
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +30,52 @@ class VESCounselorListVC: VESBaseViewController {
         configSearchField(searchField)
         setEndEditing()
         fakeDataArrayDict = PlistUtility.ReadPlistArray("FakeCounselor")
+        searchResultFakeData = fakeDataArrayDict
         listCounselor.reloadData()
     }
     
     private func configSearchField(_ field: UITextField) {
         field.delegate = self
+        
+        field
+            .rx.text
+            .orEmpty
+            .debounce(0.5, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .subscribe(onNext: { [weak self] (query) in
+                guard let strongSelf = self else { return }
+                
+                if query == "" {
+                    strongSelf.searchResultFakeData = strongSelf.fakeDataArrayDict
+                    strongSelf.listCounselor.reloadData()
+                    return
+                }
+                
+                strongSelf.searchResultFakeData = strongSelf.fakeDataArrayDict.filter({ (dict) -> Bool in
+                    guard let name = dict["name"] as? String else { return false }
+                    
+                    print(name)
+                    print(query)
+                    
+                    let isContains = name.contains(query)
+                    
+                    print("Name: \(name) contains query: \(query). Result: \(isContains)")
+                    
+                    return isContains
+                })
+                strongSelf.listCounselor.reloadData()
+            })
+            .disposed(by: disposeBag)
+//        searchBar
+//            .rx.text // Observable property thanks to RxCocoa
+//            .orEmpty // Make it non-optional
+//            .debounce(0.5, scheduler: MainScheduler.instance) // Wait 0.5 for changes.
+//            .distinctUntilChanged() // If they didn't occur, check if the new value is the same as old.
+//            .subscribe(onNext: { [unowned self] query in // Here we subscribe to every new value
+//                self.shownCities = self.allCities.filter { $0.hasPrefix(query) } // We now do our "API Request" to find cities.
+//                self.tableView.reloadData() // And reload table view data.
+//            })
+//            .addDisposableTo(disposeBag)
     }
 
     private func configList(_ list: UITableView) {
@@ -65,7 +110,7 @@ extension VESCounselorListVC: UITableViewDelegate {
 extension VESCounselorListVC: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return fakeDataArrayDict.count
+        return searchResultFakeData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -74,7 +119,7 @@ extension VESCounselorListVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(type: VESCounselorCellv2.self, for: indexPath)
-        let data = fakeDataArrayDict[indexPath.section]
+        let data = searchResultFakeData[indexPath.section]
         cell.updateWith(dict: data) {
             let counselorDetail = VESCounselorDetailVC(detail: data)
             self.navigationController?.pushViewController(counselorDetail, animated: true)
