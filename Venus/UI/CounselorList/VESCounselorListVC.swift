@@ -96,6 +96,10 @@ extension VESCounselorListVC: UITableViewDelegate {
         headerView.backgroundColor = .clear
         return headerView
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        dismissKeyboard()
+    }
 }
 
 extension VESCounselorListVC: UITableViewDataSource {
