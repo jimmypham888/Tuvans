@@ -10,6 +10,9 @@ import UIKit
 import IQKeyboardManagerSwift
 import Firebase
 import SVProgressHUD
+import FacebookCore
+import GoogleSignIn
+import FirebaseAuth
 
 @UIApplicationMain
 class VESAppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,15 +27,43 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
         
-        setupWithoutTabBar()
+//        setupWithoutTabBar()
+//        setupTabBar()
+//        setupLoginFlow()
         
+        // Facebook Configuration
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        // ==============
+        
+        // IQKeyboardManager Configuration
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
-    
+        // ==============
+        
+        // Firebase Configuration
         FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = "773698577966-p9tjh2752b4utldclh2v6hebdl2l0275.apps.googleusercontent.com"
+        // ==============
+        
+        // Other
         SVProgressHUD.setMinimumDismissTimeInterval(0.65)
+        // ==============
+        
+        if Auth.auth().currentUser != nil {
+            setupTabBar()
+        } else {
+            setupLoginFlow()
+        }
         
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let ggHandle = GIDSignIn.sharedInstance().handle(url,
+                                                         sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                         annotation: [:])
+        let fbHandle = SDKApplicationDelegate.shared.application(app, open: url, options: options)
+        return fbHandle || ggHandle
     }
     
     private func setupLoginFlow() {
@@ -44,6 +75,14 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         let counselorListVC = VESCounselorListVC()
         let navController = VESBaseNavigationController(rootViewController: counselorListVC)
         navController.makeRootView()
+    }
+    
+    func loginSuccess() {
+        setupTabBar()
+    }
+    
+    func logoutSuccess() {
+        setupLoginFlow()
     }
     
     private func setupTabBar() {

@@ -12,6 +12,7 @@ import UIKit
 enum FlowType {
     case login
     case counselor
+    case setting
 }
 
 final class FlowManager {
@@ -21,6 +22,10 @@ final class FlowManager {
             let counselorListVC = VESCounselorListVC()
             let naviCounselorListVC = VESBaseNavigationController(rootViewController: counselorListVC)
             return naviCounselorListVC
+        case .setting:
+            let settingVC = VESSettingVC()
+            let naviSettingVC = VESBaseNavigationController(rootViewController: settingVC)
+            return naviSettingVC
         case .login:
             let loginVC = VESLoginVC()
             let naviLoginVC = VESBaseNavigationController(rootViewController: loginVC)

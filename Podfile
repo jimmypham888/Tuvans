@@ -19,6 +19,11 @@ target 'Venus' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'IQKeyboardManagerSwift'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'GoogleSignIn'
 
 end

@@ -15,8 +15,11 @@ class VESTabBarVC: VESBaseTabBarController {
         
         let counselorListFlow = FlowManager.flowWith(.counselor)
         counselorListFlow.tabBarItem = UITabBarItem(title: "Danh sách cố vấn", image: nil, tag: 0)
+        
+        let settingFlow = FlowManager.flowWith(.setting)
+        settingFlow.tabBarItem = UITabBarItem(title: "Chức năng", image: nil, tag: 1)
             
-        viewControllers = [counselorListFlow]
+        viewControllers = [counselorListFlow, settingFlow]
         tabBar.isTranslucent = false
     }
     
