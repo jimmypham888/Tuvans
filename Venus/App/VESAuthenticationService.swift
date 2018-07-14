@@ -52,6 +52,30 @@ class VESAuthenticationService {
         }
     }
     
+    static func signUpWith(_ email: String, _ password: String,
+                           success: @escaping (AuthDataResult) -> (),
+                           failure: @escaping (Error) -> ()) {
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            if let error = error {
+                failure(error)
+            } else if let result = authResult {
+                success(result)
+            }
+        }
+    }
+    
+    static func loginWith(_ email: String, _ password: String,
+                          success: @escaping (AuthDataResult) -> (),
+                          failure: @escaping (Error) -> ()) {
+        Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+            if let error = error {
+                failure(error)
+            } else if let result = authResult {
+                success(result)
+            }
+        }
+    }
+    
     static func logout() {
         let firebaseAuth = Auth.auth()
         do {

@@ -32,17 +32,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ziz-bP-FSM">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFf-kX-Lm3">
-                                    <rect key="frame" x="8" y="16" width="24" height="24"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="24" id="osj-C0-H2x"/>
-                                        <constraint firstAttribute="height" constant="24" id="yqY-ob-E3a"/>
-                                    </constraints>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" image="back"/>
-                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoàn thành" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O1-Kd-6wS">
-                                    <rect key="frame" x="40" y="14.5" width="111" height="28"/>
+                                    <rect key="frame" x="105" y="14.5" width="110.5" height="28"/>
                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -50,9 +41,7 @@
                             </subviews>
                             <color key="backgroundColor" red="0.066666666669999999" green="0.40784313729999999" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstItem="2O1-Kd-6wS" firstAttribute="leading" secondItem="lFf-kX-Lm3" secondAttribute="trailing" constant="8" id="Atg-Hp-a6l"/>
-                                <constraint firstItem="lFf-kX-Lm3" firstAttribute="leading" secondItem="ziz-bP-FSM" secondAttribute="leading" constant="8" id="Jri-97-xbv"/>
-                                <constraint firstItem="lFf-kX-Lm3" firstAttribute="centerY" secondItem="ziz-bP-FSM" secondAttribute="centerY" id="NGC-Jo-3hk"/>
+                                <constraint firstItem="2O1-Kd-6wS" firstAttribute="centerX" secondItem="ziz-bP-FSM" secondAttribute="centerX" id="8Dx-3O-vLO"/>
                                 <constraint firstAttribute="height" constant="56" id="Nh8-vk-1PZ"/>
                                 <constraint firstItem="2O1-Kd-6wS" firstAttribute="centerY" secondItem="ziz-bP-FSM" secondAttribute="centerY" id="vok-t1-3Mb"/>
                             </constraints>
@@ -119,7 +108,4 @@
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="back" width="24" height="24"/>
-    </resources>
 </document>

@@ -27,7 +27,7 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
         
-//        setupWithoutTabBar()
+        setupWithoutTabBar()
 //        setupTabBar()
 //        setupLoginFlow()
         
@@ -49,11 +49,11 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.setMinimumDismissTimeInterval(0.65)
         // ==============
         
-        if Auth.auth().currentUser != nil {
-            setupTabBar()
-        } else {
-            setupLoginFlow()
-        }
+//        if Auth.auth().currentUser != nil {
+//            setupTabBar()
+//        } else {
+//            setupLoginFlow()
+//        }
         
         return true
     }
