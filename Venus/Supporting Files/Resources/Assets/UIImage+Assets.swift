@@ -69,6 +69,7 @@ enum Asset {
   static let back = ImageAsset(name: "back")
   static let close = ImageAsset(name: "close")
   static let iTunesArtwork = ImageAsset(name: "iTunesArtwork")
+  static let key = ImageAsset(name: "key")
   static let search = ImageAsset(name: "search")
 
   // swiftlint:disable trailing_comma
@@ -96,6 +97,7 @@ enum Asset {
     back,
     close,
     iTunesArtwork,
+    key,
     search,
   ]
   // swiftlint:enable trailing_comma

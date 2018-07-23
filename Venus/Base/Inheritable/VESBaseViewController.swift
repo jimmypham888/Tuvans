@@ -12,7 +12,7 @@ import SnapKit
 
 class VESBaseViewController: UIViewController {
     
-    @IBOutlet weak var wrraperView: UIView!
+    @IBOutlet weak internal var wrraperView: UIView!
     
     init() {
         super.init(nibName: String.className(type(of: self)), bundle: .main)

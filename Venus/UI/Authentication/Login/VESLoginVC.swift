@@ -12,15 +12,48 @@ import SVProgressHUD
 
 class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
-    @IBOutlet weak var emailTf: UITextField!
-    @IBOutlet weak var passwordTf: UITextField!
+    @IBOutlet weak var regNameTf: UITextField!
+    @IBOutlet weak var regEmailTf: UITextField!
+    @IBOutlet weak var regPasswordTf: UITextField!
+    
+    
+    
+    @IBOutlet weak var regBtn: UIButton!
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var stackView: UIStackView!
+    
+    @IBOutlet weak var mainRegBtn: UIButton!
+    @IBOutlet weak var regLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
+        
+        initLayout()
     }
+    
+    private func initLayout() {
+        regBtn.setColor(name: .lightNavy)
+//        loginBtn.setColor(name: .black60)
+        wrraperView.setBackgroundColor(name: .lightBlueGrey)
+        
+        stackView.arrangedSubviews.forEach { (sv) in
+            let backgroundColor = UIColor(named: .black87).withAlphaComponent(0.08)
+            sv.setBackgroundColor(color: backgroundColor)
+            (sv.subviews.first!.subviews.first! as! UIImageView).changeColorImage(name: .black54)
+            let tf = sv.subviews[1] as! UITextField
+            tf.textColor = UIColor(named: .black60)
+            tf.attributedPlaceholder = NSAttributedString(string: tf.text!, attributes: [.foregroundColor: UIColor(named: .black60)])
+            tf.tintColor = UIColor(named: .black60)
+            tf.text = nil
+        }
+        
+        mainRegBtn.setBackgroundColor(name: .lightNavy)
+        regLbl.textColor = UIColor(named: .black60)
+    }
+    
     
     @IBAction func didTapSignUp(_ sender: UIButton) {
         _ = validateEmailAndPassword(success: { (email, password) in
@@ -72,21 +105,21 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
     }
     
     private func validateEmailAndPassword(success: (_ email: String, _ password: String) -> ()) -> Bool {
-        guard let email = emailTf.text, email.count > 0 else {
+        guard let email = regEmailTf.text, email.count > 0 else {
             SVProgressHUD.showInfo(withStatus: "Vui lòng nhập email!")
-            emailTf.becomeFirstResponder()
+            regEmailTf.becomeFirstResponder()
             return false
         }
         
         if !email.isValidEmail() {
-            emailTf.becomeFirstResponder()
+            regEmailTf.becomeFirstResponder()
             SVProgressHUD.showInfo(withStatus: "Vui lòng nhập lại email!")
             return false
         }
         
-        guard let password = passwordTf.text, password.count > 0 else {
+        guard let password = regPasswordTf.text, password.count > 0 else {
             SVProgressHUD.showInfo(withStatus: "Vui lòng nhập mật khẩu!")
-            passwordTf.becomeFirstResponder()
+            regPasswordTf.becomeFirstResponder()
             return false
         }
         

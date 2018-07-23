@@ -16,6 +16,10 @@ extension UIImageView {
         tintColor = color
     }
     
+    func changeColorImage(name: ColorName) {
+        changeColorImage(UIColor(named: name))
+    }
+    
     func setImage(_ urlString: String, placeholder: UIImage? = nil) {
         let options: KingfisherOptionsInfo = [.transition(ImageTransition.fade(0.33))]
         kf.indicatorType = .activity

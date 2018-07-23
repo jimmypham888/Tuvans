@@ -27,9 +27,9 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
         
-        setupWithoutTabBar()
+//        setupWithoutTabBar()
 //        setupTabBar()
-//        setupLoginFlow()
+        setupLoginFlow()
         
         // Facebook Configuration
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
