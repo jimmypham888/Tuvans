@@ -17,6 +17,10 @@ class VESSettingVC: VESBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initLayout()
+    }
+    
+    private func initLayout() {
+        wrraperView.setBackgroundColor(name: .lightBlueGrey)
     }
 }

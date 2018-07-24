@@ -13,11 +13,14 @@ class VESTabBarVC: VESBaseTabBarController {
     init() {
         super.init(nibName: nil, bundle: nil)
         
+        tabBar.tintColor = .white
+        tabBar.barTintColor = UIColor(named: .lightNavy)
+        
         let counselorListFlow = FlowManager.flowWith(.counselor)
-        counselorListFlow.tabBarItem = UITabBarItem(title: "Danh sách cố vấn", image: nil, tag: 0)
+        counselorListFlow.tabBarItem = UITabBarItem(title: "Tìm kiếm", image: UIImage(asset: Asset.searchTabBar), tag: 0)
         
         let settingFlow = FlowManager.flowWith(.setting)
-        settingFlow.tabBarItem = UITabBarItem(title: "Chức năng", image: nil, tag: 1)
+        settingFlow.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(asset: Asset.account24), tag: 1)
             
         viewControllers = [counselorListFlow, settingFlow]
         tabBar.isTranslucent = false
@@ -29,6 +32,8 @@ class VESTabBarVC: VESBaseTabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
 }

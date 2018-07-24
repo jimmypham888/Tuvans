@@ -29,7 +29,7 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         
 //        setupWithoutTabBar()
 //        setupTabBar()
-        setupLoginFlow()
+//        setupLoginFlow()
         
         // Facebook Configuration
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -49,11 +49,11 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.setMinimumDismissTimeInterval(0.65)
         // ==============
         
-//        if Auth.auth().currentUser != nil {
-//            setupTabBar()
-//        } else {
-//            setupLoginFlow()
-//        }
+        if Auth.auth().currentUser != nil {
+            setupTabBar()
+        } else {
+            setupLoginFlow()
+        }
         
         return true
     }
