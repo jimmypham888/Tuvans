@@ -28,6 +28,14 @@ extension UIView {
             addSubview(v)
         }
     }
+    
+    func setBackgroundColor(name: ColorName) {
+        backgroundColor = UIColor(named: name)
+    }
+    
+    func setBackgroundColor(color: UIColor) {
+        backgroundColor = color
+    }
 }
 
 extension UIView {
