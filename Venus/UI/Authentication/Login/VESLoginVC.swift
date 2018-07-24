@@ -37,6 +37,9 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
     
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var regShowPasswordBtn: UIButton!
+    @IBOutlet weak var loginShowPasswordBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -70,7 +73,11 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
         loginLbl.textColor = UIColor(named: .black60)
         
         [regNameTf, regEmailTf, regPasswordTf, loginEmailTf, loginPasswordTf].forEach { $0?.delegate = self }
+        
+        [regShowPasswordBtn, loginShowPasswordBtn].forEach { $0?.tintColor = UIColor(named: .black54) }
     }
+    
+    
     
     private func changeToLoginView() {
         regView.isHidden = true
@@ -100,6 +107,26 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
         }
     }
     
+    @IBAction func didTapShowPassword(_ sender: UIButton) {
+        if sender == regShowPasswordBtn {
+            regPasswordTf.isSecureTextEntry = !regPasswordTf.isSecureTextEntry
+
+            if regPasswordTf.isFirstResponder {
+                regPasswordTf.becomeFirstResponder()
+            }
+            
+            let selectedTextRange = regPasswordTf.selectedTextRange
+            regPasswordTf.selectedTextRange = nil
+            regPasswordTf.selectedTextRange = selectedTextRange
+        } else if sender == loginShowPasswordBtn {
+            loginPasswordTf.isSecureTextEntry = !loginPasswordTf.isSecureTextEntry
+            
+            let selectedTextRange = loginPasswordTf.selectedTextRange
+            loginPasswordTf.selectedTextRange = nil
+            loginPasswordTf.selectedTextRange = selectedTextRange
+        }
+    }
+    
     @IBAction func didTapLoginView(_ sender: UIButton) {
         changeToLoginView()
     }
@@ -117,13 +144,13 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
                 VESAppDelegate.shared.loginSuccess()
             }) { (error) in
                 SVProgressHUD.dismiss()
-                print(error.localizedDescription)
+                SVProgressHUD.showError(withStatus: error.localizedDescription)
             }
         })
     }
     
     @IBAction func didTapSignIn(_ sender: UIButton) {
-        _ = validateEmailAndPassword(success: { (email, password) in
+        _ = validateEmailAndPasswordForSignin(success: { (email, password) in
             SVProgressHUD.show()
             VESAuthenticationService.loginWith(email, password, success: { (result) in
                 SVProgressHUD.dismiss()
@@ -131,13 +158,9 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
                 VESAppDelegate.shared.loginSuccess()
             }) { (error) in
                 SVProgressHUD.dismiss()
-                print(error.localizedDescription)
+                SVProgressHUD.showError(withStatus: error.localizedDescription)
             }
         })
-    }
-    
-    @IBAction func didTapSignOut(_ sender: UIButton) {
-        VESAuthenticationService.logout()
     }
     
     @IBAction func didTapLoginGoogle(_ sender: UIButton) {
@@ -150,8 +173,32 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
             print(result)
             VESAppDelegate.shared.loginSuccess()
         }) { (error) in
-            print(error.localizedDescription)
+            SVProgressHUD.showError(withStatus: error.localizedDescription)
         }
+    }
+    
+    private func validateEmailAndPasswordForSignin(success: (_ email: String, _ password: String) -> ()) -> Bool {
+        guard let email = loginEmailTf.text, email.count > 0 else {
+            SVProgressHUD.showInfo(withStatus: "Vui lòng nhập email!")
+            regEmailTf.becomeFirstResponder()
+            return false
+        }
+        
+        if !email.isValidEmail() {
+            loginEmailTf.becomeFirstResponder()
+            SVProgressHUD.showInfo(withStatus: "Vui lòng nhập lại email!")
+            return false
+        }
+        
+        guard let password = loginPasswordTf.text, password.count > 0 else {
+            SVProgressHUD.showInfo(withStatus: "Vui lòng nhập mật khẩu!")
+            loginPasswordTf.becomeFirstResponder()
+            return false
+        }
+        
+        success(email, password)
+        
+        return true
     }
     
     private func validateEmailAndPassword(success: (_ email: String, _ password: String) -> ()) -> Bool {
@@ -199,7 +246,7 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
             VESAppDelegate.shared.loginSuccess()
         }) { (error) in
             SVProgressHUD.dismiss()
-            print(error.localizedDescription)
+            SVProgressHUD.showError(withStatus: error.localizedDescription)
         }
     }
 }
