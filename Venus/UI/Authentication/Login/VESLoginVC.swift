@@ -16,14 +16,26 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
     @IBOutlet weak var regEmailTf: UITextField!
     @IBOutlet weak var regPasswordTf: UITextField!
     
+    @IBOutlet weak var loginEmailTf: UITextField!
+    @IBOutlet weak var loginPasswordTf: UITextField!
     
+    @IBOutlet weak var regView: UIView!
+    @IBOutlet weak var loginView: UIView!
     
     @IBOutlet weak var regBtn: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var loginStackView: UIStackView!
     
+    @IBOutlet weak var loginOtherWrapperView: UIView!
+    @IBOutlet weak var regWrapperView: UIView!
+    
+    @IBOutlet weak var mainLoginBtn: UIButton!
     @IBOutlet weak var mainRegBtn: UIButton!
     @IBOutlet weak var regLbl: UILabel!
+    @IBOutlet weak var loginLbl: UILabel!
+    
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,28 +44,69 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
         GIDSignIn.sharedInstance().delegate = self
         
         initLayout()
+        setEndEditing()
     }
     
     private func initLayout() {
         regBtn.setColor(name: .lightNavy)
-//        loginBtn.setColor(name: .black60)
+        loginBtn.setColor(name: .black60)
         wrraperView.setBackgroundColor(name: .lightBlueGrey)
         
-        stackView.arrangedSubviews.forEach { (sv) in
-            let backgroundColor = UIColor(named: .black87).withAlphaComponent(0.08)
-            sv.setBackgroundColor(color: backgroundColor)
-            (sv.subviews.first!.subviews.first! as! UIImageView).changeColorImage(name: .black54)
-            let tf = sv.subviews[1] as! UITextField
-            tf.textColor = UIColor(named: .black60)
-            tf.attributedPlaceholder = NSAttributedString(string: tf.text!, attributes: [.foregroundColor: UIColor(named: .black60)])
-            tf.tintColor = UIColor(named: .black60)
-            tf.text = nil
+        [stackView, loginStackView].forEach {
+            $0.arrangedSubviews.forEach { (sv) in
+                let backgroundColor = UIColor(named: .black87).withAlphaComponent(0.08)
+                sv.setBackgroundColor(color: backgroundColor)
+                (sv.subviews.first!.subviews.first! as! UIImageView).changeColorImage(name: .black54)
+                let tf = sv.subviews[1] as! UITextField
+                tf.textColor = UIColor(named: .black60)
+                tf.attributedPlaceholder = NSAttributedString(string: tf.text!, attributes: [.foregroundColor: UIColor(named: .black60)])
+                tf.tintColor = UIColor(named: .black60)
+                tf.text = nil
+            }
         }
         
         mainRegBtn.setBackgroundColor(name: .lightNavy)
         regLbl.textColor = UIColor(named: .black60)
+        loginLbl.textColor = UIColor(named: .black60)
+        
+        [regNameTf, regEmailTf, regPasswordTf, loginEmailTf, loginPasswordTf].forEach { $0?.delegate = self }
     }
     
+    private func changeToLoginView() {
+        regView.isHidden = true
+        loginView.isHidden = false
+        loginOtherWrapperView.isHidden = false
+        regWrapperView.isHidden = true
+        regBtn.setColor(name: .black60)
+        loginBtn.setColor(name: .lightNavy)
+        
+        UIView.animate(withDuration: 0.2) {
+            self.leadingConstraint.constant = 156
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    private func changeToRegView() {
+        regView.isHidden = false
+        loginView.isHidden = true
+        loginOtherWrapperView.isHidden = true
+        regWrapperView.isHidden = false
+        regBtn.setColor(name: .lightNavy)
+        loginBtn.setColor(name: .black60)
+        
+        UIView.animate(withDuration: 0.2) {
+            self.leadingConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @IBAction func didTapLoginView(_ sender: UIButton) {
+        changeToLoginView()
+    }
+    
+    @IBAction func didTapRegView(_ sender: UIButton) {
+        changeToRegView()
+    }
     
     @IBAction func didTapSignUp(_ sender: UIButton) {
         _ = validateEmailAndPassword(success: { (email, password) in
@@ -93,13 +146,10 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
     }
     
     @IBAction func didTapLoginFacebook(_ sender: UIButton) {
-        SVProgressHUD.show()
         VESAuthenticationService.facebookLogin(viewController: self, success: { (result) in
-            SVProgressHUD.dismiss()
             print(result)
             VESAppDelegate.shared.loginSuccess()
         }) { (error) in
-            SVProgressHUD.dismiss()
             print(error.localizedDescription)
         }
     }
@@ -144,8 +194,8 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
         
         guard let authentication = user.authentication else { return }
         VESAuthenticationService.googleLogin(authentication, success: { (result) in
-            print(result)
             SVProgressHUD.dismiss()
+            print(result)
             VESAppDelegate.shared.loginSuccess()
         }) { (error) in
             SVProgressHUD.dismiss()
@@ -154,3 +204,9 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
     }
 }
 
+extension VESLoginVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}

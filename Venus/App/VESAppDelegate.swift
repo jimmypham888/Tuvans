@@ -59,6 +59,9 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if SVProgressHUD.isVisible() {
+            SVProgressHUD.dismiss()
+        }
         let ggHandle = GIDSignIn.sharedInstance().handle(url,
                                                          sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
                                                          annotation: [:])
