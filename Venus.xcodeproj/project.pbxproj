@@ -13,6 +13,7 @@
 		6C2D0D0220EA8F0F00B2444F /* VESBookingCounselorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D0D0020EA8F0F00B2444F /* VESBookingCounselorVC.xib */; };
 		6C3101DD20FA179800424EFF /* VESSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3101DB20FA179800424EFF /* VESSettingVC.swift */; };
 		6C3101DE20FA179800424EFF /* VESSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C3101DC20FA179800424EFF /* VESSettingVC.xib */; };
+		6C50C3D0212901850096FF08 /* VESFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50C3CF212901850096FF08 /* VESFont.swift */; };
 		6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */; };
 		6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */; };
 		6C5C7EB420DF8EF7009C075F /* SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */; };
@@ -42,6 +43,10 @@
 		6C968C3A20E8F873003C08B8 /* FakeCounselor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C968C3920E8F873003C08B8 /* FakeCounselor.plist */; };
 		6CAD5DCB20E8F3CC00B56ADD /* VESCounselorCellv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD5DC920E8F3CC00B56ADD /* VESCounselorCellv2.swift */; };
 		6CAD5DCC20E8F3CC00B56ADD /* VESCounselorCellv2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5DCA20E8F3CC00B56ADD /* VESCounselorCellv2.xib */; };
+		6CAE8247212816F000AD052C /* VESScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE8245212816F000AD052C /* VESScheduleVC.swift */; };
+		6CAE8248212816F000AD052C /* VESScheduleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CAE8246212816F000AD052C /* VESScheduleVC.xib */; };
+		6CAE824C212818FE00AD052C /* VESScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE824A212818FE00AD052C /* VESScheduleCell.swift */; };
+		6CAE824D212818FE00AD052C /* VESScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CAE824B212818FE00AD052C /* VESScheduleCell.xib */; };
 		6CC57C9A2107A00600172D0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CC57C992107A00600172D0A /* GoogleService-Info.plist */; };
 		6CE0264120D97C6E0054C134 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0264020D97C6E0054C134 /* awsconfiguration.json */; };
 		6CE6C18320CB88FA00B58B86 /* VESAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */; };
@@ -77,6 +82,7 @@
 		6C2D0D0020EA8F0F00B2444F /* VESBookingCounselorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESBookingCounselorVC.xib; sourceTree = "<group>"; };
 		6C3101DB20FA179800424EFF /* VESSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESSettingVC.swift; sourceTree = "<group>"; };
 		6C3101DC20FA179800424EFF /* VESSettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESSettingVC.xib; sourceTree = "<group>"; };
+		6C50C3CF212901850096FF08 /* VESFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VESFont.swift; sourceTree = "<group>"; };
 		6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Atomic.swift; sourceTree = "<group>"; };
 		6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
 		6C5C7EAF20DF8EF7009C075F /* SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTask.swift; sourceTree = "<group>"; };
@@ -108,6 +114,10 @@
 		6C968C3920E8F873003C08B8 /* FakeCounselor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FakeCounselor.plist; sourceTree = "<group>"; };
 		6CAD5DC920E8F3CC00B56ADD /* VESCounselorCellv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESCounselorCellv2.swift; sourceTree = "<group>"; };
 		6CAD5DCA20E8F3CC00B56ADD /* VESCounselorCellv2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESCounselorCellv2.xib; sourceTree = "<group>"; };
+		6CAE8245212816F000AD052C /* VESScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESScheduleVC.swift; sourceTree = "<group>"; };
+		6CAE8246212816F000AD052C /* VESScheduleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESScheduleVC.xib; sourceTree = "<group>"; };
+		6CAE824A212818FE00AD052C /* VESScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESScheduleCell.swift; sourceTree = "<group>"; };
+		6CAE824B212818FE00AD052C /* VESScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESScheduleCell.xib; sourceTree = "<group>"; };
 		6CC57C992107A00600172D0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6CE0264020D97C6E0054C134 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESAppDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +225,7 @@
 		6C5C7EC020DFB637009C075F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6C50C3CF212901850096FF08 /* VESFont.swift */,
 				6C705C0A21064613008B0B9E /* UIColor+VESColor.swift */,
 				6C5C7EC220DFB755009C075F /* UIImage+Assets.swift */,
 			);
@@ -312,6 +323,25 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		6CAE8244212816BF00AD052C /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				6CAE8249212818DB00AD052C /* Cell */,
+				6CAE8245212816F000AD052C /* VESScheduleVC.swift */,
+				6CAE8246212816F000AD052C /* VESScheduleVC.xib */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		6CAE8249212818DB00AD052C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6CAE824A212818FE00AD052C /* VESScheduleCell.swift */,
+				6CAE824B212818FE00AD052C /* VESScheduleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		6CE6C17020CB882900B58B86 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +417,7 @@
 				6C3101DA20FA177300424EFF /* Setting */,
 				6C3101D920FA176500424EFF /* Authentication */,
 				6C5C7EB920DFAE8F009C075F /* StructureUI */,
+				6CAE8244212816BF00AD052C /* Schedule */,
 				6C8B951D20CB9A4A00F68D03 /* CounselorList */,
 				6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */,
 			);
@@ -529,6 +560,7 @@
 				6C7020ED20C6D3DE006AFEE5 /* Assets.xcassets in Resources */,
 				6C3101DE20FA179800424EFF /* VESSettingVC.xib in Resources */,
 				6C5C7ECB20DFC2C4009C075F /* VESCounselorCell.xib in Resources */,
+				6CAE824D212818FE00AD052C /* VESScheduleCell.xib in Resources */,
 				6C69BB8020DFFAF40039DA48 /* OpenSans-Regular.ttf in Resources */,
 				6CC57C9A2107A00600172D0A /* GoogleService-Info.plist in Resources */,
 				6C705C092106457E008B0B9E /* VESColor.txt in Resources */,
@@ -537,6 +569,7 @@
 				6C5C7ED020DFC894009C075F /* VESCounselorDetailVC.xib in Resources */,
 				6C69BB7F20DFFAF40039DA48 /* OpenSans-Bold.ttf in Resources */,
 				6C2D0D0220EA8F0F00B2444F /* VESBookingCounselorVC.xib in Resources */,
+				6CAE8248212816F000AD052C /* VESScheduleVC.xib in Resources */,
 				6C968C3A20E8F873003C08B8 /* FakeCounselor.plist in Resources */,
 				6CAD5DCC20E8F3CC00B56ADD /* VESCounselorCellv2.xib in Resources */,
 				6C1BACC320F290220037738A /* VESBookingSuccessViewController.xib in Resources */,
@@ -670,6 +703,7 @@
 			files = (
 				6C2D0D0120EA8F0F00B2444F /* VESBookingCounselorVC.swift in Sources */,
 				6CE6C1AF20CB917000B58B86 /* UIWindowTransitions.swift in Sources */,
+				6CAE8247212816F000AD052C /* VESScheduleVC.swift in Sources */,
 				6CE6C1A320CB8D0A00B58B86 /* VESBaseTableViewCell.swift in Sources */,
 				6CE6C19320CB8AE600B58B86 /* ProcessInfoExtensions.swift in Sources */,
 				6C1BACC220F290220037738A /* VESBookingSuccessViewController.swift in Sources */,
@@ -684,6 +718,7 @@
 				6C5C7EB520DF8EF7009C075F /* _RecursiveLock.swift in Sources */,
 				6CF210F120F9FBE400A314CE /* VESAuthenticationService.swift in Sources */,
 				6CE6C1AB20CB902C00B58B86 /* VESLoginVC.swift in Sources */,
+				6C50C3D0212901850096FF08 /* VESFont.swift in Sources */,
 				6C5C7EBB20DFAEEC009C075F /* VESTabBarVC.swift in Sources */,
 				6CE6C19C20CB8BF700B58B86 /* Constant.swift in Sources */,
 				6CE6C18920CB8A3600B58B86 /* ReuseableView.swift in Sources */,
@@ -704,6 +739,7 @@
 				6C705C0D2106477A008B0B9E /* UIButtonExtensions.swift in Sources */,
 				6CE6C19920CB8B6F00B58B86 /* AbstractAPI.swift in Sources */,
 				6CE6C19E20CB8C3100B58B86 /* NetworkingConstant.swift in Sources */,
+				6CAE824C212818FE00AD052C /* VESScheduleCell.swift in Sources */,
 				6C5C7EC320DFB755009C075F /* UIImage+Assets.swift in Sources */,
 				6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */,
 				6C5C7ECF20DFC894009C075F /* VESCounselorDetailVC.swift in Sources */,

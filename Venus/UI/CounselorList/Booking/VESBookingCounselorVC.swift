@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import SVProgressHUD
+import FirebaseAuth
 
 class VESBookingCounselorVC: VESBaseViewController {
 
@@ -109,9 +110,18 @@ class VESBookingCounselorVC: VESBaseViewController {
                                     telNumber: String,
                                     notes: String,
                                     counselor: String) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
         SVProgressHUD.show()
-        let customer = ["email": email, "name": name, "phone": telNumber, "notes": notes, "counselor": counselor]
-        ref.child("customers").setValue(customer) { (err, ref) in
+        let customer = ["email": email,
+                        "name": name,
+                        "phone": telNumber,
+                        "notes": notes,
+                        "counselor": counselor,
+                        "state": "0",
+                        "image": data["image"],
+                        "date": ""]
+        ref.child("customers").child(uid).childByAutoId().setValue(customer) { (err, ref) in
             SVProgressHUD.dismiss()
             if let err = err {
                 print("Error adding document: \(err)")

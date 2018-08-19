@@ -4,3 +4,4 @@ lightNavy       : #11688c
 black54         : #0000008a
 black60         : #00000099
 black87         : #000000de
+dandelion       : #f2e70b

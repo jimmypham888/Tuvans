@@ -8,7 +8,7 @@
 
 swiftgen xcassets -t swift4 $TARGET_NAME/Supporting\ Files/Assets.xcassets -o $TARGET_NAME/Supporting\ Files/Resources/Assets/UIImage+Assets.swift
 swiftgen colors -t swift4 $TARGET_NAME/Supporting\ Files/Resources/VESColor.txt -o $TARGET_NAME/Supporting\ Files/Resources/Assets/UIColor+VESColor.swift
-#swiftgen fonts -t swift4 $TARGET_NAME/Resources/Fonts -o $TARGET_NAME/Resources/Assets/NEPFont.swift
+swiftgen fonts -t swift4 $TARGET_NAME/Supporting\ Files/Resources/Fonts -o $TARGET_NAME/Supporting\ Files/Resources/Assets/VESFont.swift
 
 if [[ $? != 0 ]] ; then
 cat << EOM
