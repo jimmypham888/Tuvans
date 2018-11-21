@@ -1,3 +1,4 @@
+// swiftlint:disable all
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
 #if os(OSX)
@@ -11,6 +12,26 @@
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 
+// MARK: - Fonts
+
+// swiftlint:disable identifier_name line_length type_body_length
+internal enum FontFamily {
+  internal enum OpenSans {
+    internal static let regular = FontConvertible(name: "OpenSans", family: "Open Sans", path: "OpenSans-Regular.ttf")
+    internal static let bold = FontConvertible(name: "OpenSans-Bold", family: "Open Sans", path: "OpenSans-Bold.ttf")
+    internal static let light = FontConvertible(name: "OpenSans-Light", family: "Open Sans", path: "OpenSans-Light.ttf")
+    internal static let semibold = FontConvertible(name: "OpenSans-Semibold", family: "Open Sans", path: "OpenSans-Semibold.ttf")
+    internal static let all: [FontConvertible] = [regular, bold, light, semibold]
+  }
+  internal static let allCustomFonts: [FontConvertible] = [OpenSans.all].flatMap { $0 }
+  internal static func registerAllCustomFonts() {
+    allCustomFonts.forEach { $0.register() }
+  }
+}
+// swiftlint:enable identifier_name line_length type_body_length
+
+// MARK: - Implementation Details
+
 internal struct FontConvertible {
   internal let name: String
   internal let family: String
@@ -21,9 +42,9 @@ internal struct FontConvertible {
   }
 
   internal func register() {
+    // swiftlint:disable:next conditional_returns_on_newline
     guard let url = url else { return }
-    var errorRef: Unmanaged<CFError>?
-    CTFontManagerRegisterFontsForURL(url as CFURL, .process, &errorRef)
+    CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
   }
 
   fileprivate var url: URL? {
@@ -47,16 +68,5 @@ internal extension Font {
     self.init(name: font.name, size: size)
   }
 }
-
-// swiftlint:disable identifier_name line_length type_body_length
-internal enum FontFamily {
-  internal enum OpenSans {
-    internal static let regular = FontConvertible(name: "OpenSans", family: "Open Sans", path: "OpenSans-Regular.ttf")
-    internal static let bold = FontConvertible(name: "OpenSans-Bold", family: "Open Sans", path: "OpenSans-Bold.ttf")
-    internal static let light = FontConvertible(name: "OpenSans-Light", family: "Open Sans", path: "OpenSans-Light.ttf")
-    internal static let semibold = FontConvertible(name: "OpenSans-Semibold", family: "Open Sans", path: "OpenSans-Semibold.ttf")
-  }
-}
-// swiftlint:enable identifier_name line_length type_body_length
 
 private final class BundleToken {}

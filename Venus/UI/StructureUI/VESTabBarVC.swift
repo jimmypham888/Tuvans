@@ -20,7 +20,7 @@ class VESTabBarVC: VESBaseTabBarController {
         counselorListFlow.tabBarItem = UITabBarItem(title: "Tìm kiếm", image: Asset.searchTabBar.image, tag: 0)
         
         let scheduleFlow = FlowManager.flowWith(.schedule)
-        scheduleFlow.tabBarItem = UITabBarItem(title: "Lịch hẹn", image: Asset.TabBar.schedule.image, tag: 1)
+        scheduleFlow.tabBarItem = UITabBarItem(title: "Lịch hẹn", image: Asset.schedule.image, tag: 1)
         
         let settingFlow = FlowManager.flowWith(.setting)
         settingFlow.tabBarItem = UITabBarItem(title: "Setting", image: Asset.account24.image, tag: 2)

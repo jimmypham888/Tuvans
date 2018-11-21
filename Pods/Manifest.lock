@@ -129,6 +129,7 @@ PODS:
     - RxAtomic (~> 4.4)
   - SnapKit (4.0.1)
   - SVProgressHUD (2.2.5)
+  - SwiftGen (6.0.2)
   - SwiftyJSON (4.2.0)
   - XCGLogger (6.1.0):
     - XCGLogger/Core (= 6.1.0)
@@ -153,6 +154,7 @@ DEPENDENCIES:
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
   - SVProgressHUD
+  - SwiftGen
   - SwiftyJSON (~> 4.0)
   - XCGLogger
 
@@ -192,6 +194,7 @@ SPEC REPOS:
     - RxSwift
     - SnapKit
     - SVProgressHUD
+    - SwiftGen
     - SwiftyJSON
     - XCGLogger
 
@@ -230,9 +233,10 @@ SPEC CHECKSUMS:
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: 1a92267ca646ee24cfb3f6e0245d1c80a8f08b70
+PODFILE CHECKSUM: 8febd39147176a7d467e0ea5f3fdbb7fa5fd86ba
 
 COCOAPODS: 1.5.3

@@ -10,6 +10,7 @@ target 'Venus' do
   pod 'RxCocoa',      '~> 4.0'
   pod 'RxGesture'
   pod 'Kingfisher',   '~> 4.0'
+  pod 'SwiftGen'
   pod 'SnapKit',      '~> 4.0.0'
   pod 'SVProgressHUD'
   pod 'Alamofire',    '~> 4.7'
