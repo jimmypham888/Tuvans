@@ -13,6 +13,9 @@ import SVProgressHUD
 import FacebookCore
 import GoogleSignIn
 import FirebaseAuth
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class VESAppDelegate: UIResponder, UIApplicationDelegate {
@@ -47,6 +50,11 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         
         // Other
         SVProgressHUD.setMinimumDismissTimeInterval(0.65)
+        // ==============
+        
+        // AppCenter
+        let services: [AnyClass] = [MSAnalytics.self, MSCrashes.self]
+        MSAppCenter.start(AppCenterSecret, withServices: services)
         // ==============
         
         if Auth.auth().currentUser != nil {

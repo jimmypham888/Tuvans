@@ -13,6 +13,7 @@
 		6C2D0D0220EA8F0F00B2444F /* VESBookingCounselorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D0D0020EA8F0F00B2444F /* VESBookingCounselorVC.xib */; };
 		6C3101DD20FA179800424EFF /* VESSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3101DB20FA179800424EFF /* VESSettingVC.swift */; };
 		6C3101DE20FA179800424EFF /* VESSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C3101DC20FA179800424EFF /* VESSettingVC.xib */; };
+		6C3D9CBC21A5CE3800B2F3B3 /* VESConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D9CBB21A5CE3800B2F3B3 /* VESConstant.swift */; };
 		6C50C3D0212901850096FF08 /* VESFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50C3CF212901850096FF08 /* VESFont.swift */; };
 		6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */; };
 		6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */; };
@@ -82,6 +83,7 @@
 		6C2D0D0020EA8F0F00B2444F /* VESBookingCounselorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESBookingCounselorVC.xib; sourceTree = "<group>"; };
 		6C3101DB20FA179800424EFF /* VESSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESSettingVC.swift; sourceTree = "<group>"; };
 		6C3101DC20FA179800424EFF /* VESSettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESSettingVC.xib; sourceTree = "<group>"; };
+		6C3D9CBB21A5CE3800B2F3B3 /* VESConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESConstant.swift; sourceTree = "<group>"; };
 		6C50C3CF212901850096FF08 /* VESFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VESFont.swift; sourceTree = "<group>"; };
 		6C5C7EAD20DF8EF7009C075F /* _Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Atomic.swift; sourceTree = "<group>"; };
 		6C5C7EAE20DF8EF7009C075F /* _StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _StateMachine.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				6C5C7EBC20DFB57B009C075F /* Script */,
 				6CE6C18220CB88FA00B58B86 /* VESAppDelegate.swift */,
 				6CF210F020F9FBE400A314CE /* VESAuthenticationService.swift */,
+				6C3D9CBB21A5CE3800B2F3B3 /* VESConstant.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -678,7 +681,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$TARGET_NAME/App/Script/SwiftGen.sh";
+			shellScript = $TARGET_NAME/App/Script/SwiftGen.sh;
 		};
 		6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -705,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3D9CBC21A5CE3800B2F3B3 /* VESConstant.swift in Sources */,
 				6C2D0D0120EA8F0F00B2444F /* VESBookingCounselorVC.swift in Sources */,
 				6CE6C1AF20CB917000B58B86 /* UIWindowTransitions.swift in Sources */,
 				6CAE8247212816F000AD052C /* VESScheduleVC.swift in Sources */,
