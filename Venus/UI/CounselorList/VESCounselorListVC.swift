@@ -57,11 +57,11 @@ class VESCounselorListVC: VESBaseViewController {
                 strongSelf.listCounselor.reloadData()
                 
                 let transition = CATransition()
-                transition.type = kCATransitionFade
-                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-                transition.fillMode = kCAFillModeForwards
+                transition.type = CATransitionType.fade
+                transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+                transition.fillMode = CAMediaTimingFillMode.forwards
                 transition.duration = 0.5
-                transition.subtype = kCATransitionFromTop
+                transition.subtype = CATransitionSubtype.fromTop
                 strongSelf.listCounselor.layer.add(transition, forKey: "UITableViewReloadDataAnimationKey")
                 // Update your data source here
                 strongSelf.listCounselor.reloadData()
@@ -75,7 +75,7 @@ class VESCounselorListVC: VESBaseViewController {
         list.separatorStyle = .none
         list.rowHeight = 181.0
         list.registerCell(type: VESCounselorCellv2.self)
-        list.contentInset = UIEdgeInsetsMake(0, 0, 8, 0)
+        list.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0)
     }
 }
 

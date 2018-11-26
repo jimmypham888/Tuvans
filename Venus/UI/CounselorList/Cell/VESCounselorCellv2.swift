@@ -29,7 +29,7 @@ class VESCounselorCellv2: VESBaseTableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        originalBtn.superview?.bringSubview(toFront: originalBtn)
+        originalBtn.superview?.bringSubviewToFront(originalBtn)
     }
     
     func updateWith(dict: Dictionary<String, Any>, action: (() -> ())?) {

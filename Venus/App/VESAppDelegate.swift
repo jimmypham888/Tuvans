@@ -25,7 +25,7 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     var window: UIWindow?
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
@@ -66,12 +66,12 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         if SVProgressHUD.isVisible() {
             SVProgressHUD.dismiss()
         }
         let ggHandle = GIDSignIn.sharedInstance().handle(url,
-                                                         sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                         sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                                                          annotation: [:])
         let fbHandle = SDKApplicationDelegate.shared.application(app, open: url, options: options)
         return fbHandle || ggHandle

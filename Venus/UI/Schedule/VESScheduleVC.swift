@@ -40,7 +40,7 @@ class VESScheduleVC: VESBaseViewController {
         scheduleList.separatorStyle = .none
         scheduleList.allowsSelection = false
         scheduleList.registerCell(type: VESScheduleCell.self)
-        scheduleList.contentInset = UIEdgeInsetsMake(0, 0, 8, 0)
+        scheduleList.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0)
     }
     
     /// Hàm này sẽ gọi dữ liệu từ firebase
