@@ -34,6 +34,8 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
 //        setupTabBar()
 //        setupLoginFlow()
         
+        MSAppCenter.start("a636e34a-fc04-43a8-901f-888dc44d25d1", withServices: [MSAnalytics.self, MSCrashes.self])
+        
         // Facebook Configuration
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         // ==============

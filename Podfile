@@ -27,5 +27,6 @@ target 'Venus' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'GoogleSignIn'
+  pod 'AppCenter'
 
 end
