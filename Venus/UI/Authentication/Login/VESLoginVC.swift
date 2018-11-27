@@ -164,7 +164,6 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
     }
     
     @IBAction func didTapLoginGoogle(_ sender: UIButton) {
-        SVProgressHUD.show()
         GIDSignIn.sharedInstance().signIn()
     }
     
@@ -240,6 +239,7 @@ class VESLoginVC: VESBaseViewController, GIDSignInUIDelegate, GIDSignInDelegate 
         }
         
         guard let authentication = user.authentication else { return }
+        SVProgressHUD.show()
         VESAuthenticationService.googleLogin(authentication, success: { (result) in
             SVProgressHUD.dismiss()
             print(result)

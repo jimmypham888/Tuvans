@@ -13,6 +13,9 @@ import SVProgressHUD
 import FacebookCore
 import GoogleSignIn
 import FirebaseAuth
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class VESAppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +25,7 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     var window: UIWindow?
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = self.window ?? UIWindow()
         window!.backgroundColor = .white
@@ -30,6 +33,8 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
 //        setupWithoutTabBar()
 //        setupTabBar()
 //        setupLoginFlow()
+        
+        MSAppCenter.start("a636e34a-fc04-43a8-901f-888dc44d25d1", withServices: [MSAnalytics.self, MSCrashes.self])
         
         // Facebook Configuration
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -49,6 +54,11 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.setMinimumDismissTimeInterval(0.65)
         // ==============
         
+        // AppCenter
+        let services: [AnyClass] = [MSAnalytics.self, MSCrashes.self]
+        MSAppCenter.start(AppCenterSecret, withServices: services)
+        // ==============
+        
         if Auth.auth().currentUser != nil {
             setupTabBar()
         } else {
@@ -58,12 +68,12 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         if SVProgressHUD.isVisible() {
             SVProgressHUD.dismiss()
         }
         let ggHandle = GIDSignIn.sharedInstance().handle(url,
-                                                         sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                         sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                                                          annotation: [:])
         let fbHandle = SDKApplicationDelegate.shared.application(app, open: url, options: options)
         return fbHandle || ggHandle

@@ -17,12 +17,15 @@ class VESTabBarVC: VESBaseTabBarController {
         tabBar.barTintColor = UIColor(named: .lightNavy)
         
         let counselorListFlow = FlowManager.flowWith(.counselor)
-        counselorListFlow.tabBarItem = UITabBarItem(title: "Tìm kiếm", image: UIImage(asset: Asset.searchTabBar), tag: 0)
+        counselorListFlow.tabBarItem = UITabBarItem(title: "Tìm kiếm", image: Asset.searchTabBar.image, tag: 0)
+        
+        let scheduleFlow = FlowManager.flowWith(.schedule)
+        scheduleFlow.tabBarItem = UITabBarItem(title: "Lịch hẹn", image: Asset.schedule.image, tag: 1)
         
         let settingFlow = FlowManager.flowWith(.setting)
-        settingFlow.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(asset: Asset.account24), tag: 1)
+        settingFlow.tabBarItem = UITabBarItem(title: "Setting", image: Asset.account24.image, tag: 2)
             
-        viewControllers = [counselorListFlow, settingFlow]
+        viewControllers = [counselorListFlow, scheduleFlow, settingFlow]
         tabBar.isTranslucent = false
     }
     
