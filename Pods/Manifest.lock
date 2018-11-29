@@ -127,6 +127,7 @@ PODS:
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
   - ObjectMapper (3.4.1)
+  - OneSignal (2.9.3)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -158,6 +159,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Kingfisher (~> 4.0)
   - ObjectMapper (~> 3.2)
+  - OneSignal (< 3.0, >= 2.6.2)
   - RxCocoa (~> 4.0)
   - RxGesture
   - RxSwift (~> 4.0)
@@ -198,6 +200,7 @@ SPEC REPOS:
     - nanopb
     - ObjcExceptionBridging
     - ObjectMapper
+    - OneSignal
     - RxAtomic
     - RxCocoa
     - RxGesture
@@ -238,6 +241,7 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  OneSignal: a506e3bc61d2030f0757faf9bd783a9b211c6e3c
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxGesture: 7f6dfb45dbde06e618c24442d38493e3144f2c95
@@ -248,6 +252,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: da8357a4b7ea2899544b48bb28a8aed34ef5b512
+PODFILE CHECKSUM: f7f317902922fa9b904cccd45739e5c329cd4019
 
 COCOAPODS: 1.5.3

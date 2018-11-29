@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		469F4EECAE6600EDE9167079 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7648E7215226BB213EFE7D /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		6C00344021AEFE55002D6C11 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C00343F21AEFE55002D6C11 /* NotificationService.swift */; };
+		6C00344421AEFE55002D6C11 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C00343D21AEFE54002D6C11 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6C1BACC220F290220037738A /* VESBookingSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1BACC020F290220037738A /* VESBookingSuccessViewController.swift */; };
 		6C1BACC320F290220037738A /* VESBookingSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1BACC120F290220037738A /* VESBookingSuccessViewController.xib */; };
 		6C2D0D0120EA8F0F00B2444F /* VESBookingCounselorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D0CFF20EA8F0F00B2444F /* VESBookingCounselorVC.swift */; };
@@ -75,8 +78,37 @@
 		9AC4677C758A8D5495E558EB /* Pods_Venus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6C00344221AEFE55002D6C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C7020DA20C6D3DD006AFEE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C00343C21AEFE54002D6C11;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C00344821AEFE55002D6C11 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C00344421AEFE55002D6C11 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3A0041DC38945FA74D99D24E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C00343D21AEFE54002D6C11 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C00343F21AEFE55002D6C11 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		6C00344121AEFE55002D6C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C00344921AEFF3C002D6C11 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		6C1BACC020F290220037738A /* VESBookingSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBookingSuccessViewController.swift; sourceTree = "<group>"; };
 		6C1BACC120F290220037738A /* VESBookingSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VESBookingSuccessViewController.xib; sourceTree = "<group>"; };
 		6C2D0CFF20EA8F0F00B2444F /* VESBookingCounselorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBookingCounselorVC.swift; sourceTree = "<group>"; };
@@ -147,9 +179,19 @@
 		6CF2B3B420F9EAE3001E8662 /* Venus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Venus.entitlements; sourceTree = "<group>"; };
 		ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.release.xcconfig"; sourceTree = "<group>"; };
 		CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Venus/Pods-Venus.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF882B263BF5969BFB5128A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		DE7648E7215226BB213EFE7D /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C00343A21AEFE54002D6C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F4EECAE6600EDE9167079 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C7020DF20C6D3DD006AFEE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,8 +208,20 @@
 			children = (
 				CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */,
 				ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */,
+				3A0041DC38945FA74D99D24E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				CEF882B263BF5969BFB5128A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C00343E21AEFE55002D6C11 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6C00344921AEFF3C002D6C11 /* OneSignalNotificationServiceExtension.entitlements */,
+				6C00343F21AEFE55002D6C11 /* NotificationService.swift */,
+				6C00344121AEFE55002D6C11 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		6C2D0CFE20EA8EEF00B2444F /* Booking */ = {
@@ -269,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				6C7020E420C6D3DD006AFEE5 /* Venus */,
+				6C00343E21AEFE55002D6C11 /* OneSignalNotificationServiceExtension */,
 				6C7020E320C6D3DD006AFEE5 /* Products */,
 				1F5497BD8E218E7E27B4029B /* Pods */,
 				82D9FA79A94F8A476B9F7F0C /* Frameworks */,
@@ -279,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				6C7020E220C6D3DD006AFEE5 /* Venus.app */,
+				6C00343D21AEFE54002D6C11 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -482,6 +538,7 @@
 			isa = PBXGroup;
 			children = (
 				45C1C6CF20B5ADF17414234C /* Pods_Venus.framework */,
+				DE7648E7215226BB213EFE7D /* Pods_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -489,6 +546,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C00343C21AEFE54002D6C11 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C00344721AEFE55002D6C11 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				5C440EA6862414CDC8222D92 /* [CP] Check Pods Manifest.lock */,
+				6C00343921AEFE54002D6C11 /* Sources */,
+				6C00343A21AEFE54002D6C11 /* Frameworks */,
+				6C00343B21AEFE54002D6C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 6C00343D21AEFE54002D6C11 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		6C7020E120C6D3DD006AFEE5 /* Venus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C7020F420C6D3DE006AFEE5 /* Build configuration list for PBXNativeTarget "Venus" */;
@@ -500,10 +575,12 @@
 				6C7020E020C6D3DD006AFEE5 /* Resources */,
 				42A402AED0E2CD823366A167 /* [CP] Embed Pods Frameworks */,
 				0FA960E95809B2E53545C734 /* [CP] Copy Pods Resources */,
+				6C00344821AEFE55002D6C11 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6C00344321AEFE55002D6C11 /* PBXTargetDependency */,
 			);
 			name = Venus;
 			productName = venus;
@@ -517,14 +594,31 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = VES;
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = tuvans;
 				TargetAttributes = {
+					6C00343C21AEFE54002D6C11 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
 					6C7020E120C6D3DD006AFEE5 = {
 						CreatedOnToolsVersion = 9.3.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -545,11 +639,19 @@
 			projectRoot = "";
 			targets = (
 				6C7020E120C6D3DD006AFEE5 /* Venus */,
+				6C00343C21AEFE54002D6C11 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C00343B21AEFE54002D6C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C7020E020C6D3DD006AFEE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,6 +772,28 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5C440EA6862414CDC8222D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6C5C7EC120DFB69D009C075F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,6 +828,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C00343921AEFE54002D6C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C00344021AEFE55002D6C11 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C7020DE20C6D3DD006AFEE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -756,6 +888,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6C00344321AEFE55002D6C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C00343C21AEFE54002D6C11 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 6C00344221AEFE55002D6C11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		6C7020EE20C6D3DE006AFEE5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -768,6 +908,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C00344521AEFE55002D6C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0041DC38945FA74D99D24E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VY99ZK5693;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moranow.mora.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Mora_Dev_OneSignalNotificationServiceExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C00344621AEFE55002D6C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF882B263BF5969BFB5128A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VY99ZK5693;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moranow.mora.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Mora_Adhoc_OneSignalNotificationServiceExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6C7020F220C6D3DE006AFEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -886,6 +1075,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC5F7233E791573C65CFFBD9 /* Pods-Venus.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Venus/Venus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -910,6 +1100,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABE0CA2B3C6CD572EDDF8E82 /* Pods-Venus.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Venus/Venus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -933,6 +1124,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C00344721AEFE55002D6C11 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C00344521AEFE55002D6C11 /* Debug */,
+				6C00344621AEFE55002D6C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C7020DD20C6D3DD006AFEE5 /* Build configuration list for PBXProject "Venus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -16,6 +16,7 @@ import FirebaseAuth
 import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
+import OneSignal
 
 @UIApplicationMain
 class VESAppDelegate: UIResponder, UIApplicationDelegate {
@@ -57,6 +58,26 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         // AppCenter
         let services: [AnyClass] = [MSAnalytics.self, MSCrashes.self]
         MSAppCenter.start(AppCenterSecret, withServices: services)
+        // ==============
+        
+        // OneSignal Code
+        
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+        
+        // Replace 'YOUR_APP_ID' with your OneSignal App ID.
+        OneSignal.initWithLaunchOptions(launchOptions,
+                                        appId: "22182804-0700-4d5e-9d16-93260a0cea6e",
+                                        handleNotificationAction: nil,
+                                        settings: onesignalInitSettings)
+        
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        
+        // Recommend moving the below line to prompt for push after informing the user about
+        //   how your app will use them.
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+        
         // ==============
         
         if Auth.auth().currentUser != nil {
