@@ -64,9 +64,7 @@
 		6CE6C19320CB8AE600B58B86 /* ProcessInfoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C19220CB8AE600B58B86 /* ProcessInfoExtensions.swift */; };
 		6CE6C19520CB8B0000B58B86 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C19420CB8B0000B58B86 /* UICollectionViewExtensions.swift */; };
 		6CE6C19720CB8B4100B58B86 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C19620CB8B4100B58B86 /* StringExtensions.swift */; };
-		6CE6C19920CB8B6F00B58B86 /* AbstractAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C19820CB8B6F00B58B86 /* AbstractAPI.swift */; };
 		6CE6C19C20CB8BF700B58B86 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C19B20CB8BF700B58B86 /* Constant.swift */; };
-		6CE6C19E20CB8C3100B58B86 /* NetworkingConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C19D20CB8C3100B58B86 /* NetworkingConstant.swift */; };
 		6CE6C1A120CB8CBF00B58B86 /* EnvConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6C1A020CB8CBF00B58B86 /* EnvConfiguration.plist */; };
 		6CE6C1A320CB8D0A00B58B86 /* VESBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C1A220CB8D0A00B58B86 /* VESBaseTableViewCell.swift */; };
 		6CE6C1A520CB8D2C00B58B86 /* VESBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6C1A420CB8D2C00B58B86 /* VESBaseCollectionViewCell.swift */; };
@@ -165,9 +163,7 @@
 		6CE6C19220CB8AE600B58B86 /* ProcessInfoExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoExtensions.swift; sourceTree = "<group>"; };
 		6CE6C19420CB8B0000B58B86 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		6CE6C19620CB8B4100B58B86 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		6CE6C19820CB8B6F00B58B86 /* AbstractAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAPI.swift; sourceTree = "<group>"; };
 		6CE6C19B20CB8BF700B58B86 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		6CE6C19D20CB8C3100B58B86 /* NetworkingConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstant.swift; sourceTree = "<group>"; };
 		6CE6C1A020CB8CBF00B58B86 /* EnvConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnvConfiguration.plist; sourceTree = "<group>"; };
 		6CE6C1A220CB8D0A00B58B86 /* VESBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBaseTableViewCell.swift; sourceTree = "<group>"; };
 		6CE6C1A420CB8D2C00B58B86 /* VESBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VESBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -346,7 +342,6 @@
 				6CE6C17120CB882F00B58B86 /* App */,
 				6CE6C17320CB884A00B58B86 /* Base */,
 				6CE6C17220CB883E00B58B86 /* Extensions */,
-				6CE6C17020CB882900B58B86 /* Networking */,
 				6CE6C17620CB887900B58B86 /* UI */,
 				6CE6C19F20CB8C9600B58B86 /* Supporting Files */,
 			);
@@ -398,15 +393,6 @@
 				6CAE824B212818FE00AD052C /* VESScheduleCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		6CE6C17020CB882900B58B86 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				6CE6C19820CB8B6F00B58B86 /* AbstractAPI.swift */,
-				6CE6C19D20CB8C3100B58B86 /* NetworkingConstant.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		6CE6C17120CB882F00B58B86 /* App */ = {
@@ -608,6 +594,7 @@
 					};
 					6C7020E120C6D3DD006AFEE5 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -709,8 +696,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Venus/Pods-Venus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -718,15 +703,12 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -739,8 +721,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -748,15 +728,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -805,7 +782,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $TARGET_NAME/App/Script/SwiftGen.sh;
+			shellScript = "$TARGET_NAME/App/Script/SwiftGen.sh";
 		};
 		6FB8E7301699961E144720B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -877,8 +854,6 @@
 				6C5C7EB220DF8EF7009C075F /* _Atomic.swift in Sources */,
 				6CE6C18B20CB8A6000B58B86 /* UIImageViewExtensions.swift in Sources */,
 				6C705C0D2106477A008B0B9E /* UIButtonExtensions.swift in Sources */,
-				6CE6C19920CB8B6F00B58B86 /* AbstractAPI.swift in Sources */,
-				6CE6C19E20CB8C3100B58B86 /* NetworkingConstant.swift in Sources */,
 				6CAE824C212818FE00AD052C /* VESScheduleCell.swift in Sources */,
 				6C5C7EC320DFB755009C075F /* UIImage+Assets.swift in Sources */,
 				6C5C7EB320DF8EF7009C075F /* _StateMachine.swift in Sources */,
@@ -1091,7 +1066,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "69bf31d5-a711-46e9-a889-040dad07f236";
 				PROVISIONING_PROFILE_SPECIFIER = Mora_Dev;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1116,7 +1091,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5740550f-86db-48ec-9d44-7f825b2fb59f";
 				PROVISIONING_PROFILE_SPECIFIER = Mora_Adhoc;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

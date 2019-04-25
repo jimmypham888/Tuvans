@@ -97,7 +97,7 @@ class ConverHelper {
     
     class func convertVietNam(text: String) -> String {
         let newChar = text.map { (char) -> Character in
-            if let index = arrCoDau.index(of: char) {
+            if let index = arrCoDau.firstIndex(of: char) {
                 return arrKhongDau[index]
             } else {
                 return char

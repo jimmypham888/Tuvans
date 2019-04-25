@@ -79,13 +79,25 @@ class VESAppDelegate: UIResponder, UIApplicationDelegate {
         })
         
         // ==============
+        let currentUser = Auth.auth().currentUser
         
-        if Auth.auth().currentUser != nil {
+        if let _currentUser = currentUser {
+            
+            OneSignal.sendTags(["uid": _currentUser.uid], onSuccess: { (successDict) in
+                if let _successDict = successDict {
+                    print(_successDict)
+                }
+            }) { (error) in
+                if let _error = error {
+                    print(_error)
+                }
+            }
+            
             setupTabBar()
         } else {
             setupLoginFlow()
         }
-        
+//
         return true
     }
     
